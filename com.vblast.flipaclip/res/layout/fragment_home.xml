@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawerLayout" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/bottomNavigationBarContainer" android:layout_width="0.0dip" android:layout_height="@dimen/home_bottom_nav_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                <include android:id="@id/bottomNavigationBar" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bottom_nav_bar" />
+                <include android:id="@id/bottomNavigationBarV2" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bottom_nav_bar_v2" />
+            </FrameLayout>
+            <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentHome" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toTopOf="@id/bottomNavigationBarContainer" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentDiscover" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toTopOf="@id/bottomNavigationBarContainer" app:layout_constraintTop_toTopOf="parent" />
+            <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/home_toolbar_height" app:layout_constraintTop_toTopOf="parent" layout="@layout/home_toolbar" />
+            <com.vblast.engagement.presentation.component.BannerMessageView android:gravity="center_horizontal" android:id="@id/bannerMessage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/bottomNavigationBarContainer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.dynamicfeatures.fragment.DynamicNavHostFragment" android:gravity="left" android:layout_gravity="start" android:orientation="vertical" android:id="@id/drawerContainer" android:background="?fcColorBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="-65.0dip" android:layout_marginEnd="-65.0dip" app:navGraph="@navigation/settings_graph" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <com.vblast.core.view.ProgressHudView android:id="@id/progressHud" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="32.0dip" />
+</FrameLayout>

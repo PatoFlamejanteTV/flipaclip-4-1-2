@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="8.0dip" android:width="12.0dip" android:viewportWidth="12.0" android:viewportHeight="8.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="?fcColorIconTint" android:pathData="M2,6.5C2,5.948 1.552,5.5 1,5.5C0.448,5.5 -0,5.948 0,6.5C0,7.052 0.448,7.5 1,7.5C1.552,7.5 2,7.052 2,6.5Z" />
+    <path android:fillColor="?fcColorIconTint" android:pathData="M12,6.5C12,5.948 11.552,5.5 11,5.5C10.448,5.5 10,5.948 10,6.5C10,7.052 10.448,7.5 11,7.5C11.552,7.5 12,7.052 12,6.5Z" />
+    <path android:fillColor="?fcColorIconTint" android:pathData="M2,1.5C2,0.948 1.552,0.5 1,0.5C0.448,0.5 -0,0.948 0,1.5C0,2.052 0.448,2.5 1,2.5C1.552,2.5 2,2.052 2,1.5Z" />
+    <path android:fillColor="?fcColorIconTint" android:pathData="M12,1.5C12,0.948 11.552,0.5 11,0.5C10.448,0.5 10,0.948 10,1.5C10,2.052 10.448,2.5 11,2.5C11.552,2.5 12,2.052 12,1.5Z" />
+    <path android:fillColor="?fcColorIconTint" android:pathData="M7,1.5C7,0.948 6.552,0.5 6,0.5C5.448,0.5 5,0.948 5,1.5C5,2.052 5.448,2.5 6,2.5C6.552,2.5 7,2.052 7,1.5Z" />
+    <path android:fillColor="?fcColorIconTint" android:pathData="M7,6.5C7,5.948 6.552,5.5 6,5.5C5.448,5.5 5,5.948 5,6.5C5,7.052 5.448,7.5 6,7.5C6.552,7.5 7,7.052 7,6.5Z" />
+</vector>

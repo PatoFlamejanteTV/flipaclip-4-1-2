@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vblast.core.view.widget.FcFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/content_description_add_frame" android:layerType="software"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:importantForAccessibility="no" app:srcCompat="@drawable/ic_stage_timeline_add_frame" />
+</com.vblast.core.view.widget.FcFrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" app:fcRightOptionType="switchType" app:fcTitle="@string/toolbar_title_onion" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.vblast.core.view.squircle.SquircleFrameLayout android:id="@id/squircleOnionView" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/form_sheet_content_padding" android:layout_marginStart="@dimen/form_sheet_content_padding" android:layout_marginEnd="@dimen/form_sheet_content_padding" android:elevation="4.0dip" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <com.vblast.feature_stage.presentation.view.OnionPreviewView android:id="@id/onionPreviewView" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vblast.core.view.squircle.SquircleFrameLayout>
+    <ScrollView android:orientation="vertical" android:paddingTop="@dimen/form_sheet_content_padding" android:paddingBottom="@dimen/form_sheet_content_padding" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/squircleOnionView" app:layout_constraintVertical_bias="0.0">
+        <include android:id="@id/include" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_onion_settings_controls" />
+    </ScrollView>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentContainerView" android:layout_width="0.0dip" android:layout_height="0.0dip" android:translationZ="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

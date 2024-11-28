@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_01_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_01" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="1">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_02_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_02" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="2">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_03_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_03" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="3">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_04_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_04" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="4">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_05_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_05" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="5">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_06_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_06" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="6">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_07_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_07" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="7">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_08_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_08" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="8">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_09_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_09" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="9">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_10_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_10" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="10">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_11_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_11" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="11">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_12_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_12" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="12">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_13_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_13" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="13">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_14_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_14" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="14">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_15_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_15" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="15">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_16_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_16" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="16">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_17_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_17" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="17">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_18_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_18" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="18">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_19_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_19" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="19">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_20_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_20" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="20">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_21_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_21" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="21">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_22_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_22" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="22">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_23_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_23" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="23">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_24_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_24" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="24">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_25_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_25" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="25">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_26_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_26" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="26">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_27_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_27" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="27">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_28_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_28" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="28">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_29_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_29" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="29">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_30_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_30" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="30">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_31_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_31" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="31">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_32_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_32" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="32">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_33_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_33" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="33">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_34_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_34" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="34">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_35_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_35" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="35">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_36_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_36" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="36">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_37_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_37" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="37">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_38_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_38" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="38">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_39_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_39" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="39">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_40_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_40" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="40">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_41_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_41" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="41">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_42_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_42" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="42">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_43_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_43" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="43">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_44_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_44" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="44">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_45_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_45" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="45">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_46_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_46" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="46">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_47_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_47" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="47">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_48_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_48" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="48">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_49_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_49" />
+        </layer-list>
+    </item>
+    <item android:maxLevel="49">
+        <layer-list>
+            <item android:drawable="@drawable/ic_stage_layer_50_stroke" />
+            <item android:drawable="@drawable/ic_stage_layer_50" />
+        </layer-list>
+    </item>
+</level-list>

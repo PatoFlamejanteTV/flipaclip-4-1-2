@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/layersGraph" app:startDestination="@id/layersListFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="layersListFragment" android:name="com.vblast.feature_stage.presentation.layersettings.LayersListFragment" android:id="@id/layersListFragment">
+        <action android:id="@id/action_layersListFragment_to_layerSettingsFragment" app:destination="@id/layerSettingsFragment" />
+    </fragment>
+    <fragment android:label="layerSettingsFragment" android:name="com.vblast.feature_stage.presentation.layersettings.LayerSettingsFragment" android:id="@id/layerSettingsFragment">
+        <argument android:name="layerPosition" app:argType="integer" />
+        <action android:id="@id/action_layerSettingsFragment_to_layerBlendModeFragment" app:destination="@id/layerBlendModeFragment" />
+        <action android:id="@id/action_layerSettingsFragment_to_layerGlowColorFragment" app:destination="@id/layerGlowColorFragment" />
+    </fragment>
+    <fragment android:label="layerBlendModeFragment" android:name="com.vblast.feature_stage.presentation.layersettings.LayerSettingsBlendModeFragment" android:id="@id/layerBlendModeFragment" />
+    <fragment android:label="layerGlowColorFragment" android:name="com.vblast.feature_stage.presentation.layersettings.LayerSettingsGlowColorFragment" android:id="@id/layerGlowColorFragment" />
+</navigation>

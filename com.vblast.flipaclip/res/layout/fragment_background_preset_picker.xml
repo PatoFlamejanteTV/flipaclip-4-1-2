@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:stateListAnimator="@animator/toolbar_elevation" app:fcLeftOptionType="backType" app:fcTitle="@string/toolbar_title_backgrounds" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingBottom="@dimen/form_sheet_content_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_below="@id/toolbar" android:paddingStart="@dimen/form_sheet_content_padding" android:paddingEnd="@dimen/form_sheet_content_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

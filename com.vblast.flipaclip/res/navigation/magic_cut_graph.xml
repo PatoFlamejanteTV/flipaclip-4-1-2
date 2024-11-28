@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/magic_cut_graph" app:startDestination="@id/magicCutSegmentationListFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_magic_cut_segmentation_list" android:name="com.vblast.feature_magiccut.presentation.fragment.MagicCutSegmentationListFragment" android:id="@id/magicCutSegmentationListFragment">
+        <action android:id="@id/toMagicCutImagesFragment" app:destination="@id/magicCutImagesFragment" />
+    </fragment>
+    <fragment android:label="MagicCutImagesFragment" android:name="com.vblast.feature_magiccut.presentation.fragment.MagicCutImagesFragment" android:id="@id/magicCutImagesFragment">
+        <argument android:name="uri" app:argType="android.net.Uri" />
+        <action android:id="@id/toMagicCutImagesFragment" app:destination="@id/magicCutImagesFragment" app:popUpTo="@id/magicCutSegmentationListFragment" app:popUpToInclusive="false" />
+        <action android:id="@id/toMagicCutSegmentationListFragment" app:destination="@id/magicCutSegmentationListFragment" app:launchSingleTop="true" />
+    </fragment>
+</navigation>

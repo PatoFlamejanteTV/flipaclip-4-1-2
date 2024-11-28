@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_filter_viewholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <com.vblast.core.view.widget.FcFrameLayout android:id="@id/c1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/i1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="14.0dip" app:srcCompat="@drawable/ic_alphabetical_ascend" />
+        </com.vblast.core.view.widget.FcFrameLayout>
+        <View android:background="?fcColorDivider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <com.vblast.core.view.widget.FcFrameLayout android:id="@id/c2" android:background="?fcColorAccent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/i2" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="14.0dip" app:srcCompat="@drawable/ic_createdate_ascend" />
+        </com.vblast.core.view.widget.FcFrameLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/clTitleContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="16.0dip" android:layout_marginVertical="8.0dip">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/centerGuideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <TextView android:textAppearance="@style/TextAppearance.Fc.Section.Small" android:gravity="center" android:layout_gravity="center" android:id="@id/tvActionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/options_menu_sort_CREATED" android:layout_weight="1.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

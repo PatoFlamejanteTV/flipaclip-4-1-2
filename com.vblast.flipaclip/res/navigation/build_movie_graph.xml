@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/build_movie_graph" app:startDestination="@id/settingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <action android:id="@id/action_global_to_premiumProductFragment" app:destination="@id/premiumProductFragment" />
+    <action android:id="@id/action_global_to_subscription_graph" app:destination="@id/billing_subscription_paywall_graph">
+        <argument android:name="placementId" app:argType="string" app:nullable="true" />
+    </action>
+    <fragment android:label="MainFragment" android:name="com.vblast.feature_projects.presentation.buildmovie.BuildMovieSettingsFragment" android:id="@id/settingsFragment">
+        <argument android:name="projectId" android:defaultValue="-1L" app:argType="long" />
+        <action android:id="@id/action_settingsFragment_to_canvasSizeFragment" app:destination="@id/canvasSizeFragment">
+            <argument android:name="activeCanvasSize" app:argType="android.os.Bundle" app:nullable="true" />
+            <argument android:name="originalCanvasSize" app:argType="android.os.Bundle" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_settingsFragment_to_formatFragment" app:destination="@id/formatFragment" />
+        <action android:id="@id/action_settingsFragment_to_progressFragment" app:destination="@id/progressFragment" />
+    </fragment>
+    <fragment android:label="CanvasSizeFragment" android:name="com.vblast.feature_projects.presentation.canvassizepicker.CanvasSizePickerFragment" android:id="@id/canvasSizeFragment" />
+    <fragment android:label="FormatFragment" android:name="com.vblast.feature_projects.presentation.buildmovie.BuildMovieFormatFragment" android:id="@id/formatFragment">
+        <argument android:name="formatId" app:argType="integer" />
+    </fragment>
+    <fragment android:label="PremiumProductFragment" android:name="com.vblast.core_billing.presentation.PremiumProductDetailsFragment" android:id="@id/premiumProductFragment">
+        <argument android:name="product_id" app:argType="string" />
+        <argument android:name="show_back_button" android:defaultValue="true" app:argType="boolean" />
+    </fragment>
+    <fragment android:label="ProgressFragment" android:name="com.vblast.feature_projects.presentation.buildmovie.BuildMovieProgressFragment" android:id="@id/progressFragment">
+        <argument android:name="overrideFilename" app:argType="boolean" />
+    </fragment>
+    <include app:graph="@navigation/billing_subscription_paywall_graph" />
+</navigation>

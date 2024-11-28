@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?fcColorSecondaryBackground" />
+        </shape>
+    </item>
+    <item android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip">
+        <shape android:shape="oval">
+            <stroke android:width="2.0dip" android:color="?fcColorAccent" />
+            <color android:color="@android:color/transparent" />
+            <padding android:left="6.0dip" android:top="6.0dip" android:right="6.0dip" android:bottom="6.0dip" />
+        </shape>
+    </item>
+</layer-list>

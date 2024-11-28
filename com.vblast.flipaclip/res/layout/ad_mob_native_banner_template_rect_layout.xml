@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView android:id="@id/native_ad_view" android:background="@drawable/ad_mob_outline_shape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ad_mob_default_margin" android:layout_marginBottom="@dimen/ad_mob_default_margin" android:layout_marginStart="@dimen/ad_mob_large_margin" android:layout_marginEnd="@dimen/ad_mob_large_margin">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/ad_app_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/ad_mob_default_margin" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/ad_mob_ad_indicator_text_size" android:textStyle="bold" android:textColor="@color/ad_mob_ad_badge_green" android:gravity="center" android:id="@id/ad_notification_view" android:background="@drawable/ad_mob_rounded_corners_shape" android:layout_width="@dimen/ad_mob_ad_indicator_width" android:layout_height="@dimen/ad_mob_ad_indicator_height" android:text="@string/ad_mob_ad_badge" />
+                    <TextView android:textSize="@dimen/ad_mob_text_size_medium" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/ad_headline" android:background="#003b3f41" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/ad_mob_default_margin" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ad_mob_text_size_large" android:ellipsize="end" android:id="@id/ad_advertiser" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ad_mob_text_size_medium" android:ellipsize="end" android:id="@id/ad_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_mob_default_margin" android:maxLines="2" />
+        <com.google.android.gms.ads.nativead.MediaView android:layout_gravity="center_horizontal" android:id="@id/ad_media" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_mob_default_margin" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/ad_mob_text_size_medium" android:textColor="@color/common_google_signin_btn_text_dark_default" android:gravity="center" android:id="@id/ad_call_to_action" android:background="@color/ad_mob_button_blue" android:layout_width="fill_parent" android:layout_height="@dimen/ad_mob_medium_cta_button_height" android:layout_marginTop="@dimen/ad_mob_default_margin" android:layout_weight="0.0" />
+    </LinearLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

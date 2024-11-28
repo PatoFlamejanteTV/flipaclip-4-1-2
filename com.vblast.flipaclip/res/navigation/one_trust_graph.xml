@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/one_trust_graph" app:startDestination="@id/bannerFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="BannerFragment" android:name="com.vblast.privacy.presentation.onetrust.banner.BannerFragment" android:id="@id/bannerFragment">
+        <argument android:name="showClose" android:defaultValue="true" app:argType="boolean" />
+    </fragment>
+    <fragment android:label="PreferenceCenterFragment" android:name="com.vblast.privacy.presentation.onetrust.preferencecenter.PreferenceCenterFragment" android:id="@id/preferenceCenterFragment" />
+    <fragment android:label="VendorListFragment" android:name="com.vblast.privacy.presentation.onetrust.vendorlist.VendorListFragment" android:id="@id/vendorListFragment" />
+</navigation>

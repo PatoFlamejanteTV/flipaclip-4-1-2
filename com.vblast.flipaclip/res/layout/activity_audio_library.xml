@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:id="@id/rootFragmentContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:stateListAnimator="@animator/toolbar_elevation" app:fcRightOptionType="searchType" app:fcTitle="@string/toolbar_title_audio_library" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/searchFragmentContainer" android:layout_width="0.0dip" android:layout_height="0.0dip" android:translationZ="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

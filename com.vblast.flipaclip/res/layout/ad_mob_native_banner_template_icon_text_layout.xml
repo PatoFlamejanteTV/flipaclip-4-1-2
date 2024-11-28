@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView android:id="@id/native_ad_view" android:background="@drawable/ad_mob_outline_shape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ad_mob_default_margin" android:layout_marginBottom="@dimen/ad_mob_default_margin" android:layout_marginStart="@dimen/ad_mob_medium_margin" android:layout_marginEnd="@dimen/ad_mob_large_margin">
+        <ImageView android:layout_gravity="center" android:id="@id/ad_app_icon" android:layout_width="40.0dip" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/ad_mob_medium_margin" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ad_mob_no_margin">
+            <TextView android:textSize="@dimen/ad_mob_text_size_medium" android:textStyle="bold" android:textColor="#ff202020" android:ellipsize="end" android:id="@id/ad_headline" android:background="#003b3f41" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/inter" android:textFontWeight="700" />
+            <TextView android:textSize="@dimen/ad_mob_test_size_small" android:textStyle="normal" android:textColor="#ff202020" android:ellipsize="end" android:id="@id/ad_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/inter" android:textFontWeight="400" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

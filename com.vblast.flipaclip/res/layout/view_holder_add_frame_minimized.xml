@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="@dimen/frames_timeline_minimal_width" android:layout_height="fill_parent" app:cardBackgroundColor="?fcColorBackground" app:cardCornerRadius="12.0dip" app:cardElevation="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/type_size_body2" android:textColor="?fcColorText" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:text="+" android:includeFontPadding="false" android:fontFamily="@font/poppins_semibold_font" />
+</androidx.cardview.widget.CardView>

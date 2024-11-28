@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/centerAlign" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+    <Space android:id="@id/handlePadding" android:visibility="invisible" android:layout_width="@dimen/audio_clip_trim_handle_width" android:layout_height="0.0dip" android:layout_toStartOf="@id/centerAlign" />
+    <LinearLayout android:id="@id/clipViewContainer" android:paddingTop="@dimen/audio_track_padding_top_bottom" android:paddingBottom="@dimen/audio_track_padding_top_bottom" android:layout_width="wrap_content" android:layout_height="@dimen/audio_track_height" android:layout_centerVertical="true" android:layout_alignStart="@id/handlePadding">
+        <com.vblast.feature_stage.presentation.view.audiotracks.AudioClipView android:id="@id/audioClipView" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/clipViewContainer" android:layout_toStartOf="@id/centerAlign">
+        <ImageButton android:id="@id/cancelButton" android:background="?android:selectableItemBackground" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="@dimen/audio_track_padding_top_bottom" app:srcCompat="@drawable/ic_cancel_clip_insert" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="?fcColorText" android:id="@id/insertText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/multitrack_insert_clip_text" android:layout_below="@id/clipViewContainer" android:layout_centerHorizontal="true" />
+</merge>

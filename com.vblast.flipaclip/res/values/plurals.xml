@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="al_exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="al_exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="contest_days_left">
+        <item quantity="other">%d DAYS LEFT</item>
+        <item quantity="one">%d DAY LEFT</item>
+    </plurals>
+    <plurals name="contest_message_submissions_open_time_left_days">
+        <item quantity="other">%d days left until contest submissions open!</item>
+        <item quantity="one">%d day left until contest submissions open!</item>
+    </plurals>
+    <plurals name="contest_message_submissions_open_time_left_hrs">
+        <item quantity="other">%d hours left until contest submissions open!</item>
+        <item quantity="one">%d hour left until contest submissions open!</item>
+    </plurals>
+    <plurals name="contest_message_submissions_open_time_left_min">
+        <item quantity="other">%d minutes left until contest submissions open!</item>
+        <item quantity="one">%d minute left until contest submissions open!</item>
+    </plurals>
+    <plurals name="contest_message_winners_time_left_days">
+        <item quantity="other">%d days left until contest winners are announced!</item>
+        <item quantity="one">%d day left until contest winners are announced!</item>
+    </plurals>
+    <plurals name="contest_message_winners_time_left_hrs">
+        <item quantity="other">%d hours left until contest winners are announced!</item>
+        <item quantity="one">%d hour left until contest winners are announced!</item>
+    </plurals>
+    <plurals name="contest_message_winners_time_left_min">
+        <item quantity="other">%d minutes left until contest winners are announced!</item>
+        <item quantity="one">%d minute left until contest winners are announced!</item>
+    </plurals>
+    <plurals name="delete_selected_frames">
+        <item quantity="other">Are you sure you want to delete selected frames?</item>
+        <item quantity="one">Are you sure you want to delete selected frame?</item>
+    </plurals>
+    <plurals name="dialog_message_move_out_all_project_plural">
+        <item quantity="other">Move selected projects out of stack and delete stack?</item>
+        <item quantity="one">Move selected project out of stack and delete stack?</item>
+    </plurals>
+    <plurals name="dialog_message_move_out_project_plural">
+        <item quantity="other">Move selected projects out of stack?</item>
+        <item quantity="one">Move selected project out of stack?</item>
+    </plurals>
+    <plurals name="dialog_warn_delete_image">
+        <item quantity="other">Delete Images?</item>
+        <item quantity="one">Delete Image?</item>
+    </plurals>
+    <plurals name="dialog_warn_delete_magic_cut">
+        <item quantity="other">Delete Magic Cuts?</item>
+        <item quantity="one">Delete Magic Cut?</item>
+    </plurals>
+    <plurals name="dialog_warn_delete_projects">
+        <item quantity="other">Delete projects?</item>
+        <item quantity="one">Delete project?</item>
+    </plurals>
+    <plurals name="duration_days">
+        <item quantity="other">DAYS</item>
+        <item quantity="one">DAY</item>
+    </plurals>
+    <plurals name="duration_hours_short">
+        <item quantity="other">HRS</item>
+        <item quantity="one">HR</item>
+    </plurals>
+    <plurals name="duration_minutes_short">
+        <item quantity="other">MIN</item>
+        <item quantity="one">MIN</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d seconds</item>
+        <item quantity="one">%d second</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="fps_preview_message">
+        <item quantity="other">Currently you would need to draw %d frames to make 1 second</item>
+        <item quantity="one">Currently you would need to draw 1 frame to make 1 second</item>
+    </plurals>
+    <plurals name="image_plural">
+        <item quantity="other">%d Images</item>
+        <item quantity="one">%d Image</item>
+    </plurals>
+    <plurals name="magic_cut_plural">
+        <item quantity="other">%d Magic Cuts</item>
+        <item quantity="one">%d Magic Cut</item>
+    </plurals>
+    <plurals name="message_frames_added">
+        <item quantity="other">%d frames added</item>
+        <item quantity="one">%d frame added</item>
+    </plurals>
+    <plurals name="message_frames_copied">
+        <item quantity="other">%d frames copied</item>
+        <item quantity="one">%d frame copied</item>
+    </plurals>
+    <plurals name="message_frames_moved">
+        <item quantity="other">%d frames moved</item>
+        <item quantity="one">%d frame moved</item>
+    </plurals>
+    <plurals name="message_frames_pasted">
+        <item quantity="other">%d frames pasted</item>
+        <item quantity="one">%d frame pasted</item>
+    </plurals>
+    <plurals name="message_frames_removed">
+        <item quantity="other">%d frames removed</item>
+        <item quantity="one">%d frame removed</item>
+    </plurals>
+    <plurals name="movie_delete_plural">
+        <item quantity="other">Delete %d Movies?</item>
+        <item quantity="one">Delete %d Movie?</item>
+    </plurals>
+    <plurals name="movie_selected_plural">
+        <item quantity="other">%d Movies Selected</item>
+        <item quantity="one">%d Movie Selected</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="project_plural">
+        <item quantity="other">%d Projects</item>
+        <item quantity="one">%d Project</item>
+    </plurals>
+    <plurals name="selected_frames">
+        <item quantity="other">%d Frames</item>
+        <item quantity="one">1 Frame</item>
+    </plurals>
+    <plurals name="stack_plural">
+        <item quantity="other">%d Stacks</item>
+        <item quantity="one">%d Stack</item>
+    </plurals>
+</resources>

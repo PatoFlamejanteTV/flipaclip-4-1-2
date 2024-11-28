@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/delete_account_graph" app:startDestination="@id/passwordFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="PasswordConfirmationFragment" android:name="com.vblast.feature_accounts.presentation.fragment.PasswordFragment" android:id="@id/passwordFragment">
+        <action android:id="@id/toDeleteAccountConfirmationFragment" app:destination="@id/deleteAccountConfirmationFragment" app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/fade_in" app:popExitAnim="@anim/fade_out" />
+        <action android:id="@id/toAccountPasswordUpdateFragment" app:destination="@id/accountPasswordUpdateFragment" app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/fade_in" app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment android:label="DeleteAccountConfirmationFragment" android:name="com.vblast.feature_accounts.presentation.fragment.DeleteAccountConfirmationFragment" android:id="@id/deleteAccountConfirmationFragment">
+        <argument android:name="email" app:argType="string" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountPasswordUpdateFragment" android:id="@id/accountPasswordUpdateFragment">
+        <argument android:name="email" app:argType="string" />
+        <argument android:name="resetPassword" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="lockUserEmailUpdates" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+</navigation>

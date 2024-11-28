@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/tv_main_lyt" android:background="@color/layoutBgLightOT" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_tv_text_margin_very_small" android:layout_weight="4.0">
+            <ImageView android:id="@id/tv_back" android:background="@drawable/ot_tv_round_bg" android:paddingLeft="@dimen/ot_tv_text_margin_small" android:paddingRight="@dimen/ot_tv_text_margin_very_small" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/ot_tv_icon_height" android:layout_height="@dimen/ot_tv_icon_height" android:layout_margin="@dimen/ot_tv_layout_margin_small" android:src="@null" android:stateListAnimator="@animator/ot_round_btn_focus_in" />
+            <ImageView android:id="@id/tv_close" android:background="@drawable/ot_tv_round_bg" android:padding="7.0dip" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="@dimen/ot_tv_icon_height" android:layout_height="@dimen/ot_tv_icon_height" android:layout_margin="@dimen/ot_tv_layout_margin_small" android:src="@null" android:stateListAnimator="@animator/ot_round_btn_focus_in" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/ot_pc_container" android:background="@color/layoutBgLightOT" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ot_tv_margin_medium" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.8">
+            <ImageView android:id="@id/ot_tv_pc_logo" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/ot_tv_margin_medium" android:layout_marginRight="@dimen/ot_tv_margin_medium" android:src="@drawable/ic_ot" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/ot_tv_margin_medium" android:layout_marginEnd="@dimen/ot_tv_margin_medium" />
+            <ImageView android:id="@id/ot_tv_powered_by_logo" android:layout_width="90.0dip" android:layout_height="50.0dip" android:layout_marginBottom="@dimen/ot_tv_layout_margin_bottom" android:src="@drawable/powered_by_ot" android:layout_alignLeft="@id/ot_tv_pc_logo" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/ot_tv_margin_medium" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

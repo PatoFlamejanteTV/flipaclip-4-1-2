@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="ctIsTablet">true</bool>
+    <bool name="discover_featured_article_list_page_snap_enabled">false</bool>
+    <bool name="forcePortraitOnly">false</bool>
+    <bool name="isTablet">true</bool>
+    <bool name="ply_isTablet">true</bool>
+    <bool name="windowIsTranslucent_portrait_BUG68454482">true</bool>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.vblast.feature_color_picker.presentation.component.wheel.ColorWheelView android:id="@id/colorWheel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge_margin" android:layout_marginRight="@dimen/screen_edge_margin" android:layout_marginHorizontal="@dimen/screen_edge_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_max="@dimen/color_wheel_picker_max_width" />
+        <include android:id="@id/presetItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_edge_margin" android:layout_marginBottom="@dimen/screen_edge_margin" android:layout_marginVertical="@dimen/screen_edge_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/colorWheel" app:layout_constraintVertical_bias="0.0" layout="@layout/include_color_preset_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

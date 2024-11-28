@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/inner_home_graph" app:startDestination="@id/homeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="HomeFragment" android:name="com.vblast.feature_workspace.presentation.HomeContainerFragment" android:id="@id/homeFragment" />
+    <include app:graph="@navigation/home_discover_graph" />
+    <action android:id="@id/action_global_projectsFragment" app:destination="@id/homeFragment" app:launchSingleTop="true" />
+    <action android:id="@id/action_global_home_discover_graph" app:destination="@id/discover_home_graph" app:launchSingleTop="true">
+        <argument android:name="sectionTagToOpen" app:argType="string" app:nullable="true" />
+    </action>
+</navigation>

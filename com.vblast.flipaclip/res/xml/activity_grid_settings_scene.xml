@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@id/restingToolbar">
+        <Constraint android:id="@id/toolbar" android:layout_width="0.0dip" android:layout_height="@dimen/toolbar_height" android:elevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/floatingToolbar">
+        <Constraint android:id="@id/toolbar" android:layout_width="0.0dip" android:layout_height="@dimen/toolbar_height" android:elevation="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <Transition app:constraintSetEnd="@id/floatingToolbar" app:constraintSetStart="@id/restingToolbar">
+        <OnSwipe app:dragDirection="dragDown" app:touchAnchorId="@id/contentScrollView" app:touchAnchorSide="top" />
+    </Transition>
+</MotionScene>

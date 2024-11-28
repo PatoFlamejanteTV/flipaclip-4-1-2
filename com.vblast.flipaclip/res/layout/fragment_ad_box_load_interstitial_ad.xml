@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.VideoProgressView android:id="@id/videoProgress" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/loadAdErrorMessage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/include_error_message" />
+    <ImageButton android:id="@id/closeAction" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/content_description_close" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_close_circle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

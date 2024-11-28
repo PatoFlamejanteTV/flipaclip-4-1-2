@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="32.0dip" app:tint="?fcColorAccent" />
+    <TextView android:textSize="@dimen/type_size_caption" android:textColor="?fcColorAccent" android:layout_gravity="center_vertical" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/poppins_semibold_font" android:layout_marginStart="8.0dip" />
+</LinearLayout>

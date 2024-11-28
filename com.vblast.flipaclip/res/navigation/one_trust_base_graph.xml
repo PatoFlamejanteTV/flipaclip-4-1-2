@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/one_trust_base_graph" app:startDestination="@id/oneTrustFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.vblast.privacy.presentation.onetrust.OneTrustFragment" android:id="@id/oneTrustFragment">
+        <argument android:name="type" app:argType="integer" />
+        <argument android:name="padding" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+</navigation>

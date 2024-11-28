@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/brush_picker_graph" app:startDestination="@id/brushListFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="brushListFragment" android:name="com.vblast.feature_brushes.presentation.BrushListFragment" android:id="@id/brushListFragment">
+        <action android:id="@id/action_brushListFragment_to_brushSettingsFragment" app:destination="@id/brushSettingsFragment" />
+    </fragment>
+    <fragment android:label="brushSettingsFragment" android:name="com.vblast.feature_brushes.presentation.BrushSettingsFragment" android:id="@id/brushSettingsFragment">
+        <action android:id="@id/action_brushSettingsFragment_to_brushColorFragment" app:destination="@id/brushColorFragment" />
+    </fragment>
+    <fragment android:label="layerGlowColorFragment" android:name="com.vblast.feature_brushes.presentation.BrushColorFragment" android:id="@id/brushColorFragment" />
+</navigation>

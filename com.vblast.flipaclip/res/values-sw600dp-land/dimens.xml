@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="form_sheet_max_height">512.0dip</dimen>
+    <dimen name="form_sheet_max_width">672.0dip</dimen>
+    <dimen name="inapp_button_height">42.0dip</dimen>
+    <dimen name="stage_audio_button_margin_bottom">20.0dip</dimen>
+    <dimen name="stage_layers_button_margin_bottom">20.0dip</dimen>
+    <dimen name="stage_tools_menu_margin_end">0.0dip</dimen>
+    <dimen name="stage_tools_menu_margin_start">32.0dip</dimen>
+    <dimen name="stage_tools_menu_margin_top">0.0dip</dimen>
+    <dimen name="txt_size_inapp_button">16.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_button">16.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_message">14.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_title">18.0sp</dimen>
+    <dimen name="txt_size_inapp_half_button">16.0sp</dimen>
+    <dimen name="txt_size_inapp_half_message">16.0sp</dimen>
+    <dimen name="txt_size_inapp_half_title">21.0sp</dimen>
+    <dimen name="txt_size_inapp_message">18.0sp</dimen>
+    <dimen name="txt_size_inapp_title">22.0sp</dimen>
+</resources>

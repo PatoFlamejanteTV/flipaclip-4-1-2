@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ply_subscriptions_container" android:focusable="false" android:focusableInTouchMode="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content" android:focusable="false" android:focusableInTouchMode="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/contentLoadingProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/childFragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

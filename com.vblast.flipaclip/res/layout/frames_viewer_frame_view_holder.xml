@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.squircle.SquircleFrameLayout android:id="@id/cardHolderView" android:background="?fcColorBackground" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="@dimen/frames_viewer_view_holder_content_margin" android:elevation="@dimen/card_elevation_normal" android:stateListAnimator="@animator/card_elevation_selector" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="183:145" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/frameImage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:layout_gravity="end|center|top" android:id="@id/frameNumberText" android:background="@drawable/frame_number_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Widget.Fc.FrameNumber" />
+        <ImageView android:layout_gravity="center" android:id="@id/selectedImage" android:background="@drawable/circle_background_selected" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="center" app:srcCompat="@drawable/ic_selection_check" app:tint="?fcColorAccentIconTint" />
+        <View android:id="@id/disabledStateOverlayView" android:background="?fcColorDisabledForeground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vblast.core.view.squircle.SquircleFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

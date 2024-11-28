@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="91" android:drawable="@drawable/fps_preview_01_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_03_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_06_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_11_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_13_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_14_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_16_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_18_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_19_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_08_dark" />
+    <item android:duration="91" android:drawable="@drawable/fps_preview_02_dark" />
+</animation-list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Preference category">
+        <SwitchPreference android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+        <androidx.preference.SwitchPreference android:title="Settings option" android:key="example_switch" android:summary="Turn this option on or off" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Preference category">
+        <SwitchPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+        <SwitchPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+        <SwitchPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Preference category">
+        <SwitchPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Preference category">
+        <SwitchPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+        <SwitchPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+        <SwitchPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Switch preference" android:key="switch_preference_1" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

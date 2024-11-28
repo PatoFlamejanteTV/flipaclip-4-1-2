@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/scrubber" android:visibility="visible" android:layout_width="@dimen/timeline_fast_scroll_scrubber_width" android:layout_height="@dimen/timeline_fast_scroll_scrubber_height" android:importantForAccessibility="no" android:elevation="2.0dip" app:srcCompat="@drawable/ic_scrub_button" />
+</merge>

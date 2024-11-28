@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/main_layout" android:paddingLeft="@dimen/ot_margin_small" android:paddingRight="@dimen/ot_margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_margin_medium" android:weightSum="10.0" android:paddingStart="@dimen/ot_margin_small" android:paddingEnd="@dimen/ot_margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ot_subtitle_text_size" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5.0" />
+    <TextView android:textSize="@dimen/ot_description_text_size" android:gravity="end" android:id="@id/item_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@null" android:drawablePadding="@dimen/ot_margin_medium" android:layout_weight="5.0" />
+</LinearLayout>

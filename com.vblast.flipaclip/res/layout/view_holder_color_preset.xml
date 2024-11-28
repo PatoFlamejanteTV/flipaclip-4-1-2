@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.feature_color_picker.presentation.component.thumb.ThumbImageView android:id="@id/color" android:layout_width="@dimen/color_preset_size" android:layout_height="@dimen/color_preset_size" android:layout_margin="@dimen/color_preset_margin" android:contentDescription="@string/content_description_preset" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/add" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:contentDescription="@string/content_description_preset" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_add_project" app:tint="?fcColorBorder" />
+</androidx.constraintlayout.widget.ConstraintLayout>

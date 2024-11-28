@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vblast.core.view.IsolatedEpoxyRecyclerView android:orientation="vertical" android:id="@id/stackList" android:paddingLeft="@dimen/home_card_list_paddingHorizontal" android:paddingRight="@dimen/home_card_list_paddingHorizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="@dimen/home_card_list_paddingHorizontal" />
+    <FrameLayout android:id="@id/stackContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/account_base_graph" app:startDestination="@id/accountBaseFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountBaseFragment" android:id="@id/accountBaseFragment">
+        <argument android:name="flowType" app:argType="integer" />
+        <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="description" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="artwork" android:defaultValue="@null" app:argType="com.vblast.core_ui.presentation.entity.UriArtworkUiEntity" app:nullable="true" />
+        <argument android:name="showSkip" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+</navigation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/ot_tv_filter_item_card" android:padding="1.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_tv_text_margin_very_small" android:layout_marginBottom="@dimen/ot_tv_text_margin_very_small" android:layout_marginStart="@dimen/ot_tv_layout_margin_small" android:layout_marginEnd="@dimen/ot_tv_layout_margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ot_tv_filter_item_layout" android:padding="@dimen/ot_tv_card_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:gravity="center_vertical" android:id="@id/ot_tv_filter_item_cb" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/ot_tv_list_item_text_size" android:gravity="center_vertical" android:id="@id/ot_tv_filter_purpose" android:padding="6.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="false" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

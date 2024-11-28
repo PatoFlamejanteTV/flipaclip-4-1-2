@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="20.0dip" app:cardElevation="0.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llContent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="24.0dip" app:srcCompat="@drawable/ic_share" app:tint="?fcColorAccentIconTint" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discover_share_article" android:includeFontPadding="false" android:fontFamily="@font/poppins_semibold_font" android:layout_marginStart="8.0dip" android:layout_marginEnd="24.0dip" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

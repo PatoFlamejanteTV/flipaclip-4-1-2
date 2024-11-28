@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/color_picker_navigation" app:startDestination="@id/colorPickerWheelFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ColorPickerWheelFragment" android:name="com.vblast.feature_color_picker.presentation.fragment.ColorPickerWheelFragment" android:id="@id/colorPickerWheelFragment">
+        <argument android:name="colorPickerMode" app:argType="integer" />
+        <argument android:name="restoreColor" android:defaultValue="-2147483648" app:argType="integer" />
+        <action android:id="@id/toColorPickerClassicFragment" app:destination="@id/colorPickerClassicFragment" />
+        <action android:id="@id/toColorPickerHarmonyFragment" app:destination="@id/colorPickerHarmonyFragment" />
+        <action android:id="@id/toColorPickerValueFragment" app:destination="@id/colorPickerValueFragment" />
+        <action android:id="@id/toColorPickerSwatchFragment" app:destination="@id/colorPickerSwatchFragment" />
+    </fragment>
+    <fragment android:label="ColorPickerClassicFragment" android:name="com.vblast.feature_color_picker.presentation.fragment.ColorPickerClassicFragment" android:id="@id/colorPickerClassicFragment">
+        <argument android:name="colorPickerMode" app:argType="integer" />
+        <argument android:name="restoreColor" android:defaultValue="-2147483648" app:argType="integer" />
+        <action android:id="@id/toColorPickerWheelFragment" app:destination="@id/colorPickerWheelFragment" />
+        <action android:id="@id/toColorPickerHarmonyFragment" app:destination="@id/colorPickerHarmonyFragment" />
+        <action android:id="@id/toColorPickerValueFragment" app:destination="@id/colorPickerValueFragment" />
+        <action android:id="@id/toColorPickerSwatchFragment" app:destination="@id/colorPickerSwatchFragment" />
+    </fragment>
+    <fragment android:label="ColorPickerHarmonyFragment" android:name="com.vblast.feature_color_picker.presentation.fragment.ColorPickerHarmonyFragment" android:id="@id/colorPickerHarmonyFragment">
+        <argument android:name="colorPickerMode" app:argType="integer" />
+        <argument android:name="restoreColor" android:defaultValue="-2147483648" app:argType="integer" />
+        <action android:id="@id/toColorPickerWheelFragment" app:destination="@id/colorPickerWheelFragment" />
+        <action android:id="@id/toColorPickerClassicFragment" app:destination="@id/colorPickerClassicFragment" />
+        <action android:id="@id/toColorPickerValueFragment" app:destination="@id/colorPickerValueFragment" />
+        <action android:id="@id/toColorPickerSwatchFragment" app:destination="@id/colorPickerSwatchFragment" />
+    </fragment>
+    <fragment android:label="ColorPickerValueFragment" android:name="com.vblast.feature_color_picker.presentation.fragment.ColorPickerValueFragment" android:id="@id/colorPickerValueFragment">
+        <argument android:name="colorPickerMode" app:argType="integer" />
+        <argument android:name="restoreColor" android:defaultValue="-2147483648" app:argType="integer" />
+        <action android:id="@id/toColorPickerWheelFragment" app:destination="@id/colorPickerWheelFragment" />
+        <action android:id="@id/toColorPickerClassicFragment" app:destination="@id/colorPickerClassicFragment" />
+        <action android:id="@id/toColorPickerHarmonyFragment" app:destination="@id/colorPickerHarmonyFragment" />
+        <action android:id="@id/toColorPickerSwatchFragment" app:destination="@id/colorPickerSwatchFragment" />
+    </fragment>
+    <fragment android:label="ColorPickerSwatchFragment" android:name="com.vblast.feature_color_picker.presentation.fragment.ColorPickerSwatchFragment" android:id="@id/colorPickerSwatchFragment">
+        <action android:id="@id/toColorPickerWheelFragment" app:destination="@id/colorPickerWheelFragment" />
+        <action android:id="@id/toColorPickerClassicFragment" app:destination="@id/colorPickerClassicFragment" />
+        <action android:id="@id/toColorPickerHarmonyFragment" app:destination="@id/colorPickerHarmonyFragment" />
+        <action android:id="@id/toColorPickerValueFragment" app:destination="@id/colorPickerValueFragment" />
+    </fragment>
+</navigation>

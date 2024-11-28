@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" app:cardCornerRadius="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.RatioFrameLayout android:id="@id/ratioLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="?fcColorAccent" android:layout_gravity="end|fill_horizontal|start|center|top" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="ANNOUNCEMENT" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <TextView android:textSize="32.0dip" android:textStyle="bold" android:textColor="?fcColorText" android:layout_gravity="end|fill_horizontal|start|center|top" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+</androidx.cardview.widget.CardView>

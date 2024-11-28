@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.feature_stage.presentation.view.NoTouchRecyclerView android:id="@id/track_view" android:paddingTop="@dimen/audio_track_padding_top_bottom" android:paddingBottom="@dimen/audio_track_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/audio_track_height" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/track_menu_container" android:background="?fcColorBackground" android:paddingTop="@dimen/audio_track_menu_padding_top_bottom" android:paddingBottom="@dimen/audio_track_menu_padding_top_bottom" android:focusable="true" android:clickable="true" android:layout_width="@dimen/audio_track_menu_width" android:layout_height="@dimen/audio_track_height" android:layout_alignParentStart="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.vblast.feature_stage.presentation.view.sliderbutton.SliderButton android:layout_gravity="center" android:id="@id/volumeSlider" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/content_description_volume" app:fcTouchAnchor="right" />
+            <ImageView android:id="@id/volumeIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" app:srcCompat="@drawable/btn_audio_small" />
+        </FrameLayout>
+        <com.vblast.core.view.widget.FcImageButton android:id="@id/lock" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/btn_lock_small" android:scaleType="center" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/lock_view" android:background="?fcColorAccent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/audio_track_height" android:scaleType="fitXY" android:alpha="0.0" android:layout_toEndOf="@id/track_menu_container" />
+</merge>

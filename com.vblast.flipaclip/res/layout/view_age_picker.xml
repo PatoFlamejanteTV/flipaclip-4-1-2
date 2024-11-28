@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shawnlin.customnumberpicker.CustomNumberPicker android:id="@id/agePicker" android:layout_width="wrap_content" android:layout_height="wrap_content" app:np_dividerThickness="0.0dip" app:np_itemSpacing="@dimen/number_picker_item_spacing" app:np_max="99" app:np_min="0" app:np_order="descending" app:np_selectedTextColor="?fcColorAccent" app:np_selectedTextSize="@dimen/number_picker_selected_text_size" app:np_selectedTypeface="@font/poppins_bold" app:np_textColor="?fcColorAccent" app:np_textSize="@dimen/number_picker_text_size" app:np_typeface="@font/poppins_bold"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

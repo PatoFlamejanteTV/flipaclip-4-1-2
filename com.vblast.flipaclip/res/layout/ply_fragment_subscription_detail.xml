@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ply_subscriptions_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollContent" android:paddingTop="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutContent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/ply_subscriptions_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="8.0dip" android:text="@string/ply_subscription_detail_group_title" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:layout_marginStart="16.0dip" />
+            <include layout="@layout/ply_item_subscription_list" />
+            <TextView android:textColor="@color/ply_subscriptions_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="8.0dip" android:text="@string/ply_subscription_plans_group_title" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:layout_marginStart="16.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutOptions" android:background="@color/ply_subscriptions_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip" />
+            <TextView android:textColor="#fffe2a1a" android:gravity="center" android:id="@id/buttonCancelSubscription" android:background="@drawable/ply_background_white_selectable" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/ply_subscription_unsubscribe_button" android:fontFamily="sans-serif-medium" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:elevation="4.0dip" android:backgroundTint="@color/ply_subscriptions_surface" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/cancellationFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/coverImage" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <include android:layout_gravity="end|bottom|center" android:id="@id/metadata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" layout="@layout/include_movie_metadata_bubble" />
+    <TextView android:textSize="@dimen/type_size_overline1" android:textColor="?fcColorMediaInfoTextBackground" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/contentTypeText" android:background="@drawable/media_artwork_content_type_text_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="8.0dip" android:minWidth="32.0dip" android:includeFontPadding="false" android:fontFamily="@font/poppins_semibold_font" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginEnd="8.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/playImage" android:background="@drawable/media_artwork_play_background" android:paddingLeft="2.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="center" android:contentDescription="@null" app:srcCompat="@drawable/ic_media_play" />
+    <View android:id="@id/disabledStateOverlayView" android:background="?fcColorDisabledForeground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

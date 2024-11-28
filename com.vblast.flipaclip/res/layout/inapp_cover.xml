@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:id="@id/inapp_cover_frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/cover_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/backgroundImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="inapp_bg_img" android:layout_alignParentStart="true" />
+        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/cover_title" android:layout_width="262.0dip" android:layout_height="wrap_content" android:layout_marginTop="54.0dip" android:maxLines="2" android:layout_centerHorizontal="true" android:contentDescription="inapp_title" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/cover_message" android:layout_width="262.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/cover_title" android:layout_centerHorizontal="true" android:contentDescription="inapp_message" />
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/cover_linear_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="54.0dip" android:layout_below="@id/cover_message" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <Button android:textSize="20.0sp" android:id="@id/cover_button1" android:visibility="invisible" android:layout_width="264.0dip" android:layout_height="42.0dip" android:contentDescription="inapp_btn1" />
+            <Button android:textSize="20.0sp" android:id="@id/cover_button2" android:visibility="invisible" android:layout_width="264.0dip" android:layout_height="42.0dip" android:layout_marginTop="20.0dip" android:contentDescription="inapp_btn2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.clevertap.android.sdk.customviews.CloseImageView android:layout_gravity="end|center|top" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:adjustViewBounds="true" android:contentDescription="inapp_close_btn" android:layout_marginEnd="10.0dip" />
+</FrameLayout>

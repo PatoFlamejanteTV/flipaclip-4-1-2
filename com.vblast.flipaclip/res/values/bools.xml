@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="admob_hardware_accelerated">true</bool>
+    <bool name="ctIsTablet">false</bool>
+    <bool name="discover_featured_article_list_page_snap_enabled">true</bool>
+    <bool name="enable_system_alarm_service_default">false</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">true</bool>
+    <bool name="forcePortraitOnly">true</bool>
+    <bool name="isPortrait">true</bool>
+    <bool name="isSmallDevice">true</bool>
+    <bool name="isTablet">false</bool>
+    <bool name="isTabletLarge">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="ply_isTablet">false</bool>
+    <bool name="web_frame_hardware_accelerated">true</bool>
+    <bool name="windowIsTranslucent_portrait_BUG68454482">true</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

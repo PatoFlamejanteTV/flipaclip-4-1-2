@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentPadding="0.0dip" app:shapeAppearanceOverlay="@style/ShapeAppearance.Fc.PopoverDialogBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

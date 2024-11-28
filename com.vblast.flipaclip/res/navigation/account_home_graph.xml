@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/account_home_graph"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <action android:id="@id/toAccountHomeFragment" app:destination="@id/accountHomeFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" app:popUpTo="@id/account_home_graph" app:popUpToInclusive="true" />
+    <action android:id="@id/toAccountCreateWizardFragment" app:destination="@id/accountCreateWizardFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" app:popUpTo="@id/accountAuthOptionsFragment" app:popUpToInclusive="false" />
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountLoginFragment" android:id="@id/accountLoginFragment">
+        <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="description" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="artwork" android:defaultValue="@null" app:argType="com.vblast.core_ui.presentation.entity.UriArtworkUiEntity" app:nullable="true" />
+        <argument android:name="showSkip" app:argType="boolean" />
+        <action android:id="@id/toAccountEmailSignInFragment" app:destination="@id/accountEmailSignInFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+        <action android:id="@id/toCreateAccountFragment" app:destination="@id/createAccountFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.CreateAccountFragment" android:id="@id/createAccountFragment">
+        <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="description" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="artwork" android:defaultValue="@null" app:argType="com.vblast.core_ui.presentation.entity.UriArtworkUiEntity" app:nullable="true" />
+        <argument android:name="showSkip" app:argType="boolean" />
+        <action android:id="@id/toAccountLoginFragment" app:destination="@id/accountLoginFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+        <action android:id="@id/toAccountCreateWizardFragment" app:destination="@id/accountCreateWizardFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountHomeFragment" android:id="@id/accountHomeFragment">
+        <action android:id="@id/toAccountAuthHomeFragment" app:destination="@id/accountAuthHomeFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" app:popUpTo="@id/account_home_graph" app:popUpToInclusive="true" />
+        <action android:id="@id/toAccountEditFragment" app:destination="@id/accountEditFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+        <action android:id="@id/toAccountEmailVerifyWarnFragment" app:destination="@id/accountEmailVerifyWarnFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+        <action android:id="@id/toLoginAndSecurityFragment" app:destination="@id/loginAndSecurityFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountAuthHomeFragment" android:id="@id/accountAuthHomeFragment">
+        <argument android:name="message" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <action android:id="@id/toAccountAuthOptionsFragment" app:destination="@id/accountAuthOptionsFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" app:popUpTo="@id/accountAuthHomeFragment" app:popUpToInclusive="false" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountAuthOptionsFragment" android:id="@id/accountAuthOptionsFragment">
+        <argument android:name="option" app:argType="integer" />
+        <action android:id="@id/toAccountAuthOptionsFragment" app:destination="@id/accountAuthOptionsFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" app:popUpTo="@id/accountAuthHomeFragment" app:popUpToInclusive="false" />
+        <action android:id="@id/toAccountEmailSignInFragment" app:destination="@id/accountEmailSignInFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+        <action android:id="@id/toAccountCreateWizardFragment" app:destination="@id/accountCreateWizardFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" app:popUpTo="@id/accountAuthOptionsFragment" app:popUpToInclusive="false" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountEmailSignInFragment" android:id="@id/accountEmailSignInFragment">
+        <action android:id="@id/toAccountPasswordUpdateFragment" app:destination="@id/accountPasswordUpdateFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountEditFragment" android:id="@id/accountEditFragment">
+        <argument android:name="userData" app:argType="com.vblast.feature_accounts.account.model.UserData" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountEmailVerifyWarnFragment" android:id="@id/accountEmailVerifyWarnFragment" />
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountPasswordUpdateFragment" android:id="@id/accountPasswordUpdateFragment">
+        <argument android:name="email" app:argType="string" />
+        <argument android:name="resetPassword" app:argType="boolean" />
+        <argument android:name="lockUserEmailUpdates" android:defaultValue="true" app:argType="boolean" />
+        <action android:id="@id/toAccountPasswordUpdateFragment" app:destination="@id/accountPasswordUpdateFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.LoginAndSecurityFragment" android:id="@id/loginAndSecurityFragment">
+        <action android:id="@id/toAccountPasswordUpdateFragment" app:destination="@id/accountPasswordUpdateFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+        <action android:id="@id/toDeleteAccountGraph" app:destination="@id/delete_account_graph" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+        <action android:id="@id/toDeleteAccountThirdPartyGraph" app:destination="@id/delete_account_third_party_graph" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    </fragment>
+    <fragment android:name="com.vblast.feature_accounts.presentation.fragment.AccountCreateWizardFragment" android:id="@id/accountCreateWizardFragment">
+        <argument android:name="emailAccountType" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="email" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="firstName" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="lastName" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <include app:graph="@navigation/delete_account_third_party_graph" />
+    <include app:graph="@navigation/delete_account_graph" />
+</navigation>

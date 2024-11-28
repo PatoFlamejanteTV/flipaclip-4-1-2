@@ -1,0 +1,94 @@
+.class final Landroidx/compose/foundation/text/selection/SelectionGesturesKt$f;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/foundation/text/selection/SelectionGesturesKt;->mouseSelectionBtf2(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;Landroidx/compose/foundation/text/selection/MouseSelectionObserver;Landroidx/compose/foundation/text/selection/b;Landroidx/compose/ui/input/pointer/PointerEvent;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic d:Landroidx/compose/foundation/text/selection/MouseSelectionObserver;
+
+
+# direct methods
+.method constructor <init>(Landroidx/compose/foundation/text/selection/MouseSelectionObserver;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionGesturesKt$f;->d:Landroidx/compose/foundation/text/selection/MouseSelectionObserver;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
+    .locals 3
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionGesturesKt$f;->d:Landroidx/compose/foundation/text/selection/MouseSelectionObserver;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
+
+    .line 6
+    move-result-wide v1
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-interface {v0, v1, v2}, Landroidx/compose/foundation/text/selection/MouseSelectionObserver;->onExtendDrag-k-4lQ0M(J)Z
+
+    .line 10
+    move-result v0
+
+    .line 11
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->consume()V
+
+    .line 16
+    :cond_0
+    return-void
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    .line 2
+    check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionGesturesKt$f;->a(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
+
+    .line 6
+    .line 7
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 8
+    return-object p1
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" app:fcLeftOptionType="backType" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.button.MaterialButton android:id="@id/actionButton" android:layout_width="0.0dip" android:layout_height="@dimen/action_button_height" android:layout_marginBottom="16.0dip" android:text="@string/dialog_action_next" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Widget.Fc.Button.Primary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

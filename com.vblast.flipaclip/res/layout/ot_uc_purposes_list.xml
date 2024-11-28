@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_layout" android:paddingLeft="@dimen/ot_margin_text" android:paddingTop="@dimen/ot_margin_small" android:paddingRight="@dimen/ot_margin_text" android:paddingBottom="@dimen/ot_margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+            <TextView android:textSize="@dimen/ot_title_text_size" android:textStyle="bold" android:id="@id/purpose_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="5" android:layout_weight="6.0" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/purpose_toggle" android:layout_width="@dimen/ot_width_zero" android:layout_height="wrap_content" android:layout_weight="4.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ot_description_text_size" android:id="@id/purpose_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_margin_very_small" android:layout_below="@id/title_layout" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/consent_preferences_list_topic" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_margin_very_small" android:layout_below="@id/purpose_description" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/consent_preferences_list_child" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_margin_very_small" android:layout_below="@id/consent_preferences_list_topic" />
+    </RelativeLayout>
+    <View android:id="@id/purpose_divider" android:background="@color/light_greyOT" android:layout_width="fill_parent" android:layout_height="@dimen/ot_margin_very_small" android:layout_marginTop="@dimen/ot_margin_medium" android:layout_below="@id/item_layout" />
+</RelativeLayout>

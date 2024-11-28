@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/sdk_linearLyt_tv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ot_title_large_text_size" android:textStyle="bold" android:id="@id/sdk_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_margin_small" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/ot_tv_margin_secondary" android:layout_marginEnd="@dimen/ot_tv_margin_secondary" android:layout_alignParentStart="true" />
+    <ScrollView android:scrollbarSize="@dimen/ot_scrollbar_size" android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/bg_main" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/sdk_name_tv">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:id="@id/tv_sdk_card_consent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_tv_margin_medium" android:layout_marginBottom="@dimen/ot_tv_layout_margin_small" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/ot_tv_margin_secondary" android:layout_marginEnd="@dimen/ot_tv_margin_secondary" android:elevation="@dimen/ot_tv_card_elevation">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/sdk_consent_lyt" android:padding="@dimen/ot_tv_card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/ot_tv_list_item_text_size" android:gravity="start" android:id="@id/sdk_consent_label_tv" android:padding="@dimen/ot_tv_toggle_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAllCaps="false" />
+                        <CheckBox android:gravity="end" android:id="@id/tv_sdk_consent_cb" android:padding="@dimen/ot_tv_toggle_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="15.0" />
+                        <CheckBox android:gravity="end" android:id="@id/tv_sdk_on_cb" android:padding="@dimen/ot_tv_toggle_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="15.0" />
+                        <TextView android:gravity="end" android:id="@id/tv_sdk_always_active" android:padding="@dimen/ot_tv_toggle_text_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" android:textAllCaps="false" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@id/tv_sdk_card_off" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ot_tv_layout_margin_small" android:layout_below="@id/tv_sdk_card_consent" android:layout_marginStart="@dimen/ot_tv_margin_secondary" android:layout_marginEnd="@dimen/ot_tv_margin_secondary" android:elevation="@dimen/ot_tv_card_elevation">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/sdk_off_lyt" android:padding="@dimen/ot_tv_card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/ot_tv_list_item_text_size" android:gravity="start" android:id="@id/sdk_off_label_tv" android:padding="@dimen/ot_tv_toggle_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAllCaps="false" />
+                        <CheckBox android:gravity="end" android:id="@id/sdk_off_cb" android:padding="@dimen/ot_tv_toggle_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="15.0" android:textAllCaps="false" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/ot_tv_list_item_text_size" android:id="@id/sdk_desc_tv" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_tv_layout_margin_small" android:layout_below="@id/relativeLayout" android:layout_marginStart="@dimen/ot_tv_margin_secondary" android:layout_marginEnd="@dimen/ot_tv_margin_secondary" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

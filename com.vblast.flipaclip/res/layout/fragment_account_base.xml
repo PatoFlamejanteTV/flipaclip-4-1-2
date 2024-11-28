@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_host_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="true" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/include_error_message" />
+</FrameLayout>

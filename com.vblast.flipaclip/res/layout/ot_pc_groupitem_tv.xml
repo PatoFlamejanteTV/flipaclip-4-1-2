@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/tv_grp_layout" android:padding="@dimen/ot_tv_button_padding" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusLeft="@id/tv_grp_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ot_tv_margin_secondary" android:layout_marginRight="@dimen/ot_tv_margin_primary" android:layout_marginStart="@dimen/ot_tv_margin_secondary" android:layout_marginEnd="@dimen/ot_tv_margin_primary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/ot_description_text_size" android:textStyle="bold" android:id="@id/tv_grp_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" />
+        <TextView android:textSize="@dimen/ot_vl_toggle_text_size" android:id="@id/tv_sub_group_vendor_count" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:layout_gravity="end|center" android:id="@id/group_status_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.5" />
+    <TextView android:gravity="center" android:layout_gravity="end|center" android:id="@id/always_active_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="10" android:layout_weight="3.5" />
+    <ImageView android:layout_gravity="center" android:id="@id/group_show_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@null" android:layout_weight="4.0" android:contentDescription="@string/go_to_detail_about_the_category" />
+</LinearLayout>

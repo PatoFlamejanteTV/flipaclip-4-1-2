@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentContainerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/closeAction" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_close_article" />
+</androidx.constraintlayout.widget.ConstraintLayout>

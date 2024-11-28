@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/billing_subscription_paywall_graph" app:startDestination="@id/subscriptionPaywallFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ThemeFragment" android:name="com.vblast.billing_subscription.presentation.SubscriptionPaywallFragment" android:id="@id/subscriptionPaywallFragment">
+        <argument android:name="placementId" app:argType="string" app:nullable="true" />
+        <argument android:name="handleDismiss" android:defaultValue="true" app:argType="boolean" app:nullable="false" />
+    </fragment>
+</navigation>

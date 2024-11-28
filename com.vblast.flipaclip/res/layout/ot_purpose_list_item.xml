@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rv_main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ot_fab_margin" android:textStyle="bold" android:id="@id/purpose_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ot_fab_margin" android:layout_marginTop="@dimen/ot_margin_medium" android:maxLines="5" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/ot_fab_margin" android:layout_toStartOf="@id/purpose_select" android:layout_alignParentStart="true" />
+    <CheckBox android:id="@id/purpose_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ot_fab_margin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:importantForAccessibility="auto" android:layout_marginEnd="@dimen/ot_fab_margin" android:layout_alignParentEnd="true" />
+    <View android:id="@id/purpose_name_divider" android:background="@color/trans_light_greyOT" android:layout_width="fill_parent" android:layout_height="@dimen/ot_divider_height_secondary" android:layout_marginTop="@dimen/ot_margin_medium" android:layout_below="@id/purpose_name" />
+</RelativeLayout>

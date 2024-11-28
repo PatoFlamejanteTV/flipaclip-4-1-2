@@ -1,0 +1,109 @@
+syntax = "proto3";
+
+package gatewayprotocol.v1;
+
+import "google/protobuf/timestamp.proto";
+import "gatewayprotocol/v1/header_bidding_token.proto";
+
+option swift_prefix = "Gateway";
+
+message BidRequestEvent {
+  string mediation_auction_id = 1;
+  optional string mediation_server = 2;
+  optional int64 tmax = 3;
+  optional string game_id = 4;
+  optional string placement_id = 5;
+  optional string ad_type = 6;
+  optional float bid_floor = 7;
+  optional string bid_floor_currency = 8;
+  optional bool test = 9;
+  optional int32 test_id = 10;
+  optional string bundle = 11;
+  optional string sdk_version = 12;
+  optional TokenInfo token_info = 13;
+  optional string display_manager = 14;
+  repeated string blocked_apps = 15;
+  repeated string blocked_categories = 16;
+  repeated string blocked_domains = 17;
+  optional App app = 18;
+  optional User user = 19;
+  optional Publisher publisher = 20;
+  optional Device device = 21;
+  optional Geo geo = 22;
+  optional GatewayStatus status = 23;
+  optional string raw_bid_request = 24;
+  google.protobuf.Timestamp timestamp = 25;
+}
+
+message TokenInfo {
+  optional TokenType token_type = 1;
+  optional bool is_bold_sdk = 2;
+  optional HeaderBiddingToken header_bidding_token = 3;
+}
+
+message App {
+  optional string name = 1;
+  optional string bundle = 2;
+  repeated string cat = 3;
+  optional string store_url = 4;
+}
+
+message Publisher {
+  optional string id = 1;
+  optional string name = 2;
+  optional string domain = 3;
+}
+
+message User {
+  optional string id = 1;
+  optional string consent = 2;
+}
+
+message Device{
+  optional string ua = 1;
+  optional string ip = 2;
+  optional int32 device_type = 3;
+  optional string make = 4;
+  optional string model = 5;
+  optional string os = 6;
+  optional string osv = 7;
+}
+
+message Geo {
+  optional float lat = 1;
+  optional float lon = 2;
+  optional int32 type = 3;
+  optional string country = 4;
+  optional string region = 5;
+  optional string city = 6;
+  optional string zip = 7;
+
+}
+
+enum TokenType {
+  TOKEN_TYPE_UNSPECIFIED = 0;
+  TOKEN_TYPE_NATIVE = 1;
+  TOKEN_TYPE_HB = 2;
+  TOKEN_TYPE_HB_SCAR = 3;
+}
+
+message GatewayStatus {
+  optional bool is_error = 1;
+  optional GatewayError error = 2;
+  repeated string message = 3;
+}
+
+enum GatewayError {
+  GATEWAY_ERROR_UNSPECIFIED = 0;
+  GATEWAY_ERROR_PARSE_REQUEST = 1;
+  GATEWAY_ERROR_NIL_USER = 2;
+  GATEWAY_ERROR_NIL_DEVICE = 3;
+  GATEWAY_ERROR_NIL_TOKEN = 4;
+  GATEWAY_ERROR_INVALID_IMPRESSION_COUNT = 5;
+  GATEWAY_ERROR_MISSING_PLACEMENT_ID = 6;
+  GATEWAY_ERROR_NATIVE_TOKEN_RESOLUTION = 7;
+  GATEWAY_ERROR_UA_TOKEN_DECRYPTION = 8;
+  GATEWAY_ERROR_HB_TOKEN_DECODE = 9;
+  GATEWAY_ERROR_HB_TOKEN_UNMARSHAL = 10;
+  GATEWAY_ERROR_BANNER_GEO_THROTTLED = 11;
+}

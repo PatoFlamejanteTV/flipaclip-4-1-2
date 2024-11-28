@@ -1,0 +1,33 @@
+{
+  "id": "welcome_baseline",
+  "start": [
+    {
+      "flowId": "default"
+    }
+  ],
+  "steps": [
+    {
+      "stepId": "tutorial",
+      "type": "100",
+      "showClose": true,
+      "content": {
+        "title": "Make your first animation!",
+        "description": "20+ Million people made this, too!",
+        "artwork": {
+          "url": "drawable://tutorial_artwork_medal"
+        },
+        "videoArtwork": "drawable://tutorial_video_artwork",
+        "video": "https://player.vimeo.com/external/450930661.m3u8?s=965007157b0af12c249c69bcbe7f1d4eb9f53578",
+        "secondaryActionTitle": "Discover more",
+        "secondaryAction": "flipaclip://discover"
+      }
+    }
+  ],
+  "flows": {
+    "default": [
+      {
+        "stepId": "tutorial"
+      }
+    ]
+  }
+}

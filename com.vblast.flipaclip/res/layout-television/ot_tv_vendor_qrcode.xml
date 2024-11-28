@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vendor_qrcode_tv_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ot_tv_list_item_text_size" android:gravity="center_horizontal" android:id="@id/ot_tv_qr_code_vendor_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_tv_text_margin_very_small" />
+    <ImageView android:layout_gravity="center" android:id="@id/ot_tv_qr_code_vendor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ot_tv_layout_margin_small" android:contentDescription="@string/str_qr_code_description" />
+</LinearLayout>

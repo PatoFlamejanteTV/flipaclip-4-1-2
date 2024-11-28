@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package gatewayprotocol.v1;
+
+import "gatewayprotocol/v1/campaign_state.proto";
+import "gatewayprotocol/v1/client_info.proto";
+import "gatewayprotocol/v1/dynamic_device_info.proto";
+import "gatewayprotocol/v1/pii.proto";
+import "gatewayprotocol/v1/session_counters.proto";
+import "gatewayprotocol/v1/static_device_info.proto";
+import "gatewayprotocol/v1/timestamps.proto";
+
+option swift_prefix = "Gateway";
+
+message HeaderBiddingToken {
+  bytes token_id = 1;
+  int32 token_number = 2;
+  bytes session_token = 3;
+  ClientInfo client_info = 4;
+  Timestamps timestamps = 5;
+  SessionCounters session_counters = 6;
+  StaticDeviceInfo static_device_info = 7;
+  DynamicDeviceInfo dynamic_device_info = 8;
+  optional Pii pii = 9;
+  CampaignState campaign_state = 10;
+  optional bytes tcf = 11;
+}

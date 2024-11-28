@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/account_graph" app:startDestination="@id/accountFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AccountFragment" android:name="com.vblast.feature_accounts.AccountFragment" android:id="@id/accountFragment">
+        <action android:id="@id/action_accountFragment_to_billingSubscriptionSettingsGraph" app:destination="@id/billing_subscription_settings_graph" />
+        <action android:id="@id/action_accountFragment_to_billingLicenseSettingsGraph" app:destination="@id/billing_license_settings_graph" />
+        <action android:id="@id/toAccountNotificationTopicFragment" app:destination="@id/accountNotificationTopicFragment" />
+        <action android:id="@id/toAccountConsentFragment" app:destination="@id/accountConsentFragment" />
+    </fragment>
+    <include app:graph="@navigation/billing_subscription_settings_graph" />
+    <include app:graph="@navigation/billing_license_settings_graph" />
+    <fragment android:label="AccountNotificationTopicFragment" android:name="com.vblast.feature_accounts.presentation.fragment.AccountNotificationTopicFragment" android:id="@id/accountNotificationTopicFragment">
+        <argument android:name="title" app:argType="reference" />
+        <argument android:name="description" app:argType="reference" />
+        <argument android:name="notificationChannelId" app:argType="reference" />
+    </fragment>
+    <fragment android:label="AccountConsentFragment" android:name="com.vblast.feature_accounts.presentation.fragment.AccountConsentFragment" android:id="@id/accountConsentFragment">
+        <argument android:name="type" app:argType="integer" />
+        <argument android:name="padding" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+</navigation>

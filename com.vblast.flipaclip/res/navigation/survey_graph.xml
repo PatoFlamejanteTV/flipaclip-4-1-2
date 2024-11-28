@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/survey_graph"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <action android:id="@id/toSurveyChoiceFormFragment" app:destination="@id/surveyChoiceFormFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    <action android:id="@id/toSurveyTextInputFormFragment" app:destination="@id/surveyTextInputFormFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    <action android:id="@id/toSurveyGenericMessageFormFragment" app:destination="@id/surveyGenericMessageFormFragment" app:enterAnim="@animator/default_screen_enter" app:exitAnim="@animator/default_screen_exit" app:popEnterAnim="@animator/default_screen_enter" app:popExitAnim="@animator/default_screen_exit" />
+    <fragment android:label="SurveyChoiceFormFragment" android:name="com.vblast.feature_survey.presentation.screens.choice.SurveyChoiceFormFragment" android:id="@id/surveyChoiceFormFragment">
+        <argument android:name="surveyForm" app:argType="com.vblast.feature_survey.presentation.entity.SurveyFormUiEntity" />
+    </fragment>
+    <fragment android:label="SurveyTextInputFormFragment" android:name="com.vblast.feature_survey.presentation.screens.textinput.SurveyTextInputFormFragment" android:id="@id/surveyTextInputFormFragment">
+        <argument android:name="surveyForm" app:argType="com.vblast.feature_survey.presentation.entity.SurveyFormUiEntity" />
+    </fragment>
+    <fragment android:label="SurveyGenericMessageFormFragment" android:name="com.vblast.feature_survey.presentation.screens.genericmessage.SurveyGenericMessageFormFragment" android:id="@id/surveyGenericMessageFormFragment">
+        <argument android:name="surveyForm" app:argType="com.vblast.feature_survey.presentation.entity.SurveyFormUiEntity" />
+    </fragment>
+</navigation>

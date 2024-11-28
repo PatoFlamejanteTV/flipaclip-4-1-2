@@ -1,0 +1,259 @@
+.class final Lcom/google/android/play/core/splitinstall/internal/a0;
+.super Lcom/google/android/play/core/splitinstall/internal/zzv;
+.source "SourceFile"
+
+
+# instance fields
+.field final synthetic a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/play/core/splitinstall/internal/zzaf;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Lcom/google/android/play/core/splitinstall/internal/zzv;-><init>()V
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zzc()V
+    .locals 5
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzg(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Ljava/lang/Object;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    monitor-enter v0
+
+    .line 8
+    .line 9
+    :try_start_0
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzi(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 13
+    move-result-object v1
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    .line 17
+    move-result v1
+
+    .line 18
+    const/4 v2, 0x0
+
+    .line 19
+    .line 20
+    if-lez v1, :cond_1
+
+    .line 21
+    .line 22
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzi(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 26
+    move-result-object v1
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
+
+    .line 30
+    move-result v1
+
+    .line 31
+    .line 32
+    if-gtz v1, :cond_0
+
+    .line 33
+    goto :goto_0
+
+    .line 34
+    .line 35
+    :cond_0
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzf(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Lcom/google/android/play/core/splitinstall/internal/zzu;
+
+    .line 39
+    move-result-object v1
+
+    .line 40
+    .line 41
+    const-string v3, "Leaving the connection open for other ongoing calls."
+
+    .line 42
+    .line 43
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {v1, v3, v2}, Lcom/google/android/play/core/splitinstall/internal/zzu;->zzd(Ljava/lang/String;[Ljava/lang/Object;)I
+
+    .line 47
+    monitor-exit v0
+
+    .line 48
+    return-void
+
+    .line 49
+    :catchall_0
+    move-exception v1
+
+    .line 50
+    goto :goto_1
+
+    .line 51
+    .line 52
+    :cond_1
+    :goto_0
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzd(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Landroid/os/IInterface;
+
+    .line 56
+    move-result-object v3
+
+    .line 57
+    .line 58
+    if-eqz v3, :cond_2
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzf(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Lcom/google/android/play/core/splitinstall/internal/zzu;
+
+    .line 62
+    move-result-object v1
+
+    .line 63
+    .line 64
+    const-string v3, "Unbind from service."
+
+    .line 65
+    .line 66
+    new-array v4, v2, [Ljava/lang/Object;
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {v1, v3, v4}, Lcom/google/android/play/core/splitinstall/internal/zzu;->zzd(Ljava/lang/String;[Ljava/lang/Object;)I
+
+    .line 70
+    .line 71
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zza(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Landroid/content/Context;
+
+    .line 75
+    move-result-object v3
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzb(Lcom/google/android/play/core/splitinstall/internal/zzaf;)Landroid/content/ServiceConnection;
+
+    .line 79
+    move-result-object v1
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {v3, v1}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+
+    .line 83
+    .line 84
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 85
+    .line 86
+    .line 87
+    invoke-static {v1, v2}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzl(Lcom/google/android/play/core/splitinstall/internal/zzaf;Z)V
+
+    .line 88
+    .line 89
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 90
+    const/4 v2, 0x0
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-static {v1, v2}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzm(Lcom/google/android/play/core/splitinstall/internal/zzaf;Landroid/os/IInterface;)V
+
+    .line 94
+    .line 95
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 96
+    .line 97
+    .line 98
+    invoke-static {v1, v2}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzk(Lcom/google/android/play/core/splitinstall/internal/zzaf;Landroid/content/ServiceConnection;)V
+
+    .line 99
+    .line 100
+    :cond_2
+    iget-object v1, p0, Lcom/google/android/play/core/splitinstall/internal/a0;->a:Lcom/google/android/play/core/splitinstall/internal/zzaf;
+
+    .line 101
+    .line 102
+    .line 103
+    invoke-static {v1}, Lcom/google/android/play/core/splitinstall/internal/zzaf;->zzo(Lcom/google/android/play/core/splitinstall/internal/zzaf;)V
+
+    .line 104
+    monitor-exit v0
+
+    .line 105
+    return-void
+
+    .line 106
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 107
+    throw v1
+.end method

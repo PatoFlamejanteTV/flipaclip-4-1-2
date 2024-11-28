@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.airbnb.epoxy.EpoxyRecyclerView android:id="@id/ervContent" android:paddingLeft="@dimen/home_card_list_paddingHorizontal" android:paddingRight="@dimen/home_card_list_paddingHorizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="@dimen/home_card_list_paddingHorizontal" />
+    <include android:id="@id/emptyStateMessage" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/include_empty_state_message" />
+    <include android:id="@id/errorMessage" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/include_error_message" />
+    <com.vblast.core.view.ProgressHudView android:layout_gravity="center" android:id="@id/progressHud" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

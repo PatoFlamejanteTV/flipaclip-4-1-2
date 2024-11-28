@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vblast.core.view.VideoProgressView android:id="@id/videoProgress" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:elevation="0.0dip" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/filter_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ot_title_text_size" android:textStyle="bold" android:id="@id/ot_filter_title" android:padding="@dimen/ot_margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/ot_subtitle_text_size" android:textStyle="bold" android:id="@id/ot_cancel_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ot_fab_margin" android:layout_marginTop="@dimen/ot_margin_medium" android:layout_alignParentLeft="true" android:layout_marginStart="@dimen/ot_fab_margin" android:layout_alignParentStart="true" />
+    <View android:id="@id/view1" android:background="@color/trans_light_greyOT" android:layout_width="fill_parent" android:layout_height="@dimen/ot_divider_height_secondary" android:layout_below="@id/ot_filter_title" />
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="@dimen/ot_scrollbar_size" android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/filter_list" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer_layout" android:layout_below="@id/view1" android:importantForAccessibility="no" />
+    <RelativeLayout android:id="@id/footer_layout" android:background="@color/whiteOT" android:padding="@dimen/ot_layout_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="@dimen/ot_layout_elevation">
+        <Button android:textSize="@dimen/ot_button_text_size" android:id="@id/btn_apply_filter" android:padding="@dimen/ot_sdk_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" />
+    </RelativeLayout>
+</RelativeLayout>

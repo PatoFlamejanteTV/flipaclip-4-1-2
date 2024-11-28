@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.IsolatedEpoxyRecyclerView android:orientation="vertical" android:id="@id/stackListInStack" android:paddingLeft="@dimen/home_card_list_paddingHorizontal" android:paddingRight="@dimen/home_card_list_paddingHorizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="@dimen/home_card_list_paddingHorizontal" />
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/llMoveOutContainer" android:background="@drawable/bg_secondary_background_24_inactive" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:translationZ="4.0dip">
+        <ImageView android:id="@id/ivMoveOutArrow" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginVertical="8.0dip" app:srcCompat="@drawable/ic_move_back" />
+        <TextView android:textSize="14.0sp" android:textColor="?fcColorText" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ivMoveOutText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_action_move_out" android:includeFontPadding="false" android:fontFamily="@font/poppins_medium_font" android:layout_marginStart="8.0dip" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+</FrameLayout>

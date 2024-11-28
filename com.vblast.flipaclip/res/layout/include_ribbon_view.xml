@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vblast.core.view.widget.FcConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/content_description_contest"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_ribbon_background" />
+    <TextView android:textAppearance="@style/TextAppearance.Fc.Type.Ribbon" android:gravity="center" android:id="@id/ribbonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:includeFontPadding="false" android:textAlignment="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <ImageView android:id="@id/ribbonIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:srcCompat="@drawable/ic_ribbon_icon" />
+</com.vblast.core.view.widget.FcConstraintLayout>

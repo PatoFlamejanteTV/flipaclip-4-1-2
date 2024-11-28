@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.Fc.Title" android:id="@id/presetName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge_margin" android:layout_marginRight="@dimen/screen_edge_margin" android:layout_marginHorizontal="@dimen/screen_edge_margin" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/presetList" android:paddingLeft="@dimen/screen_edge_margin" android:paddingRight="@dimen/screen_edge_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/screen_edge_margin" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

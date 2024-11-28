@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:exitFadeDuration="@android:integer/config_longAnimTime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="true" android:color="@color/groupItemSelectedBGOT" />
+    <item android:state_focused="false" android:state_pressed="true" android:color="@color/groupItemSelectedBGOT" />
+    <item android:state_focused="true" android:state_pressed="false" android:color="@color/groupItemSelectedBGOT" />
+    <item android:state_focused="false" android:state_pressed="false" android:color="@color/groupItemBGOT" />
+</selector>

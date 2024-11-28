@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:layout_width="0.0dip" android:layout_height="@dimen/toolbar_height" android:elevation="4.0dip" app:fcLeftOptionType="backType" app:fcTitle="@string/toolbar_title_canvas_size" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/customCanvasSizePicker" android:background="?fcColorBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:elevation="4.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/form_sheet_content_padding" android:layout_marginEnd="@dimen/form_sheet_content_padding" layout="@layout/include_custom_canvas_size_picker" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sizePresets" android:layout_width="0.0dip" android:layout_height="0.0dip" android:paddingStart="@dimen/form_sheet_content_padding" android:paddingEnd="@dimen/form_sheet_content_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/customCanvasSizePicker" />
+</androidx.constraintlayout.widget.ConstraintLayout>

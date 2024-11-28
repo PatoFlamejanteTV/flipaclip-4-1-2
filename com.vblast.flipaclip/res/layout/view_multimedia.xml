@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_auto_start="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivError" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_import_photo" />
+    <androidx.media3.ui.PlayerView android:id="@id/videoPlayerView" android:background="?fcColorSecondaryBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="zoom" app:shutter_background_color="?fcColorSecondaryBackground" app:surface_type="texture_view" app:use_controller="false" />
+</com.facebook.shimmer.ShimmerFrameLayout>

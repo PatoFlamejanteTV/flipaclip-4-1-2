@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:layout_gravity="center" android:id="@id/shimmer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_auto_start="true">
+        <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+        <androidx.media3.ui.PlayerView android:id="@id/video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="zoom" app:shutter_background_color="?fcColorSecondaryBackground" app:surface_type="texture_view" app:use_controller="false" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/animation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</merge>

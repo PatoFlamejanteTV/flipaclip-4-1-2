@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_sheet_dialog" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.SelectionItemView android:id="@id/share_timelapse" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fcTitleIcon="@drawable/ic_share" app:fcTitleText="@string/timelapse_menu_share" />
+    <View android:background="?fcColorDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <com.vblast.core.view.SelectionItemView android:id="@id/enable_timelapse" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fcTitleIcon="@drawable/ic_timelapse" app:fcTitleText="@string/timelapse_menu_record">
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/enable_timelapse_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </com.vblast.core.view.SelectionItemView>
+    <View android:background="?fcColorDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <com.vblast.core.view.SelectionItemView android:id="@id/delete_recording" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fcTitleIcon="@drawable/ic_delete" app:fcTitleText="@string/timelapse_menu_delete" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/settings_graph" app:startDestination="@id/settingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="SettingsFragment" android:name="com.vblast.feature_settings.presentation.SettingsFragment" android:id="@id/settingsFragment">
+        <action android:id="@id/action_settingsFragment_to_appSettingsFragment" app:destination="@id/appSettingsFragment" />
+        <action android:id="@id/action_settingsFragment_to_account_graph" app:destination="@id/account_graph" />
+        <action android:id="@id/action_settingsFragment_to_about_graph" app:destination="@id/about_graph" />
+    </fragment>
+    <fragment android:label="AppSettingsFragment" android:name="com.vblast.feature_settings.presentation.AppSettingsFragment" android:id="@id/appSettingsFragment">
+        <action android:id="@id/action_appSettingsFragment_to_drawInputFragment" app:destination="@id/drawInputFragment" />
+        <action android:id="@id/action_appSettingsFragment_to_timeLapseFragment" app:destination="@id/timeLapseFragment" />
+        <action android:id="@id/action_appSettingsFragment_to_themeFragment" app:destination="@id/themeFragment" />
+        <action android:id="@id/action_appSettingsFragment_to_sonarPenGraph" app:destination="@id/sonarPenGraph" />
+        <action android:id="@id/action_appSettingsFragment_to_debugSettignsFragment" app:destination="@id/debugSettignsFragment" />
+    </fragment>
+    <fragment android:label="DrawInputFragment" android:name="com.vblast.feature_settings.presentation.DrawInputFragment" android:id="@id/drawInputFragment" />
+    <fragment android:label="TimeLapseFragment" android:name="com.vblast.feature_settings.presentation.TimeLapseFragment" android:id="@id/timeLapseFragment">
+        <action android:id="@id/action_timeLapseFragment_to_timeLapseFpsFragment" app:destination="@id/timeLapseFpsFragment" />
+    </fragment>
+    <fragment android:label="TimeLapseFpsFragment" android:name="com.vblast.feature_settings.presentation.TimeLapseFpsFragment" android:id="@id/timeLapseFpsFragment" />
+    <fragment android:label="ThemeFragment" android:name="com.vblast.feature_settings.presentation.ThemeFragment" android:id="@id/themeFragment" />
+    <fragment android:label="DebugSettingsFragment" android:name="com.vblast.debug_settings.presentation.DebugSettingsFragment" android:id="@id/debugSettignsFragment" />
+    <include app:graph="@navigation/sonarpen_graph" />
+    <include app:graph="@navigation/about_graph" />
+    <include app:graph="@navigation/account_graph" />
+</navigation>

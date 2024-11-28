@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.feature_color_picker.presentation.component.ColorPickerTopBarView android:id="@id/topBar" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_host_fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" app:defaultNavHost="true" app:layout_constraintBottom_toTopOf="@id/bottomNavigation" app:layout_constraintTop_toBottomOf="@id/topBar" />
+    <com.vblast.feature_color_picker.presentation.component.ColorPickerBottomNavBarView android:id="@id/bottomNavigation" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_nav_height" android:elevation="@dimen/bottom_nav_elevation" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

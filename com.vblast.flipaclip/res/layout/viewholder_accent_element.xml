@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vblast.core.view.widget.FcFrameLayout android:id="@id/container" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.squircle.SquircleImageView android:layout_gravity="center" android:id="@id/colorPicker" android:layout_width="80.0dip" android:layout_height="64.0dip" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/flselected" android:background="@drawable/bg_settings_accent_color_white_dot" android:layout_width="24.0dip" android:layout_height="24.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/ivselected" android:layout_width="16.0dip" android:layout_height="16.0dip" app:srcCompat="@drawable/ic_selection_check" app:tint="?fcColorAccentIconTint" />
+    </FrameLayout>
+</com.vblast.core.view.widget.FcFrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?fcColorSecondaryBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.feature_stage.presentation.view.audiotracks.MultiTrackAudioRuler android:id="@id/audioRuler" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="@dimen/audio_ticker_height" android:layout_marginTop="1.0dip" app:layout_constraintTop_toBottomOf="@id/midToolbar" />
+    <com.vblast.feature_stage.presentation.view.audiotracks.MultiTrackView android:id="@id/multitrackView" android:background="?fcColorSecondaryBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/audioRuler" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/scrubber" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/audioRuler">
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="?fcColorAccent" app:layout_constraintEnd_toEndOf="@id/scrubber_marker" app:layout_constraintStart_toStartOf="@id/scrubber_marker" />
+        <ImageView android:id="@id/scrubber_marker" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/audio_playback_position_marker" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vblast.feature_stage.presentation.view.audiotracks.InsertNewClipView android:id="@id/insertNewClipView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/multitrackView" app:layout_constraintTop_toBottomOf="@id/midToolbar" />
+    <include android:id="@id/midToolbar" android:layout_width="fill_parent" android:layout_height="@dimen/audio_editor_mid_toolbar_height" layout="@layout/include_audio_editor_mid_toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

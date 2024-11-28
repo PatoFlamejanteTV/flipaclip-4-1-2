@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/home_graph" app:startDestination="@id/homeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="HomeFragment" android:name="com.vblast.feature_home.presentation.HomeFragment" android:id="@id/homeFragment" />
+    <include app:graph="@navigation/settings_graph" />
+    <action android:id="@id/action_global_settings_graph" app:destination="@id/settings_graph" app:launchSingleTop="true" />
+    <action android:id="@id/action_global_homeFragment" app:destination="@id/homeFragment" app:launchSingleTop="true" />
+</navigation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="333" android:drawable="@drawable/fps_preview_01_dark" />
+    <item android:duration="333" android:drawable="@drawable/fps_preview_13_dark" />
+    <item android:duration="333" android:drawable="@drawable/fps_preview_16_dark" />
+</animation-list>

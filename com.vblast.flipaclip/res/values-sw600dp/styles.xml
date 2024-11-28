@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Fc.FormSheet" parent="@style/Theme.Material3.Light.Dialog">
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowBackground">@drawable/form_sheet_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Fc.FormSheet</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowMinWidthMajor">@dimen/form_sheet_max_width</item>
+        <item name="android:windowMinWidthMinor">@dimen/form_sheet_max_width</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowElevation">8.0dip</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowFixedHeightMajor">@dimen/form_sheet_max_height</item>
+        <item name="windowFixedHeightMinor">@dimen/form_sheet_max_height</item>
+        <item name="windowFixedWidthMajor">@dimen/form_sheet_max_width</item>
+        <item name="windowFixedWidthMinor">@dimen/form_sheet_max_width</item>
+        <item name="windowMinWidthMajor">@dimen/form_sheet_max_width</item>
+        <item name="windowMinWidthMinor">@dimen/form_sheet_max_width</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

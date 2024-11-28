@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center_horizontal" android:id="@id/emptyListMessage" android:visibility="gone" android:layout_width="256.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="8.0dip" android:text="@string/contest_submissions_empty_message" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextAppearance.Fc.Label" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingLeft="@dimen/contest_tab_side_padding" android:paddingRight="@dimen/contest_tab_side_padding" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+    <com.vblast.core.view.ContentLoadingOverlayView android:id="@id/contentLoadingOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

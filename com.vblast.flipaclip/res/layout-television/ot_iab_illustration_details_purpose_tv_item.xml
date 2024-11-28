@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/iab_illustration_item_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_text_padding" android:layout_marginBottom="@dimen/ot_text_padding">
+        <View android:id="@id/iab_illustration_purpose_item_divider" android:background="@color/trans_light_greyOT" android:padding="@dimen/ot_vd_purpose_item_padding" android:layout_width="fill_parent" android:layout_height="@dimen/ot_divider_height_secondary" android:layout_marginTop="@dimen/ot_illustration_margin_top" android:layout_marginBottom="@dimen/ot_illustration_margin_bottom" android:layout_alignParentTop="true" />
+        <TextView android:id="@id/iab_illustration_purpose_item" android:padding="@dimen/ot_vd_purpose_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ot_illustration_margin_top" android:layout_marginBottom="@dimen/ot_illustration_margin_top" android:layout_below="@id/iab_illustration_purpose_item_divider" />
+    </RelativeLayout>
+</LinearLayout>

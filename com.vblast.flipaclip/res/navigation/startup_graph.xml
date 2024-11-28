@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/startup_graph"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="StaticStart" android:name="com.vblast.feature_startup.presentation.screens.getstarted.StaticStartFragment" android:id="@id/staticStartFragment" />
+    <fragment android:label="GetStarted" android:name="com.vblast.feature_startup.presentation.screens.getstarted.GetStartedFragment" android:id="@id/getStartedFragment" />
+    <fragment android:label="AgeGate" android:name="com.vblast.feature_startup.presentation.screens.agegate.AgeGateFragment" android:id="@id/ageGateFragment" />
+    <fragment android:label="AccountLogin" android:name="com.vblast.feature_startup.presentation.screens.account.AccountFragment" android:id="@id/accountLoginFragment" />
+    <fragment android:label="CreateAccount" android:name="com.vblast.feature_startup.presentation.screens.account.AccountFragment" android:id="@id/accountCreateAccountFragment" />
+    <fragment android:label="Tutorial" android:name="com.vblast.feature_startup.presentation.screens.tutorial.StartupTutorialFragment" android:id="@id/startupTutorialFragment" />
+    <fragment android:label="Splash" android:name="com.vblast.feature_startup.presentation.screens.splash.SplashFragment" android:id="@id/splashFragment">
+        <argument android:name="showCloseButton" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="ctaUri" app:argType="string" app:nullable="true" />
+        <argument android:name="videoUri" app:argType="string" app:nullable="false" />
+    </fragment>
+    <fragment android:label="Loading" android:name="com.vblast.feature_startup.presentation.screens.loading.LoadingFragment" android:id="@id/loadingFragment">
+        <argument android:name="showCloseButton" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="artwork" app:argType="com.vblast.core_ui.presentation.entity.UriArtworkUiEntity" app:nullable="true" />
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="Survey" android:name="com.vblast.feature_startup.presentation.screens.survey.StartupSurveyFragment" android:id="@id/startupSurveyFragment" />
+    <fragment android:label="Consent" android:name="com.vblast.feature_startup.presentation.screens.consent.StartupConsentFragment" android:id="@id/startupConsentFragment" />
+    <fragment android:label="Generic Message" android:name="com.vblast.feature_startup.presentation.screens.genericmessage.GenericMessageFragment" android:id="@id/genericMessageFragment">
+        <argument android:name="showCloseButton" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="artwork" app:argType="com.vblast.core_ui.presentation.entity.UriArtworkUiEntity" app:nullable="true" />
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="description" app:argType="string" app:nullable="true" />
+        <argument android:name="proceedTitle" app:argType="string" app:nullable="true" />
+        <argument android:name="dismissTitle" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="Error" android:name="com.vblast.feature_startup.presentation.screens.error.ErrorFragment" android:id="@id/errorFragment">
+        <argument android:name="showCloseButton" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="artwork" app:argType="com.vblast.core_ui.presentation.entity.ArtworkUiEntity" app:nullable="true" />
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="description" app:argType="string" app:nullable="true" />
+        <argument android:name="proceedTitle" app:argType="string" />
+        <argument android:name="dismissTitle" app:argType="string" app:nullable="true" />
+    </fragment>
+    <include app:graph="@navigation/home_graph" />
+</navigation>

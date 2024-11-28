@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="71" android:drawable="@drawable/fps_preview_01_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_03_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_07_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_11_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_13_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_14_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_16_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_18_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_19_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_21_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_07_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_04_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_02_light" />
+    <item android:duration="71" android:drawable="@drawable/fps_preview_01_light" />
+</animation-list>

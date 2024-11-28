@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/import_audio_graph"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="recordAudioFragment" android:name="com.vblast.feature_stage.presentation.importaudio.RecordAudioFragment" android:id="@id/recordAudioFragment">
+        <action android:id="@id/action_recordAudioFragment_to_importAudioFragment" app:destination="@id/importAudioFragment" />
+    </fragment>
+    <fragment android:label="trimAudioFragment" android:name="com.vblast.feature_stage.presentation.importaudio.ImportAudioFragment" android:id="@id/importAudioFragment">
+        <argument android:name="mediaUri" android:defaultValue="@null" app:argType="android.net.Uri" app:nullable="true" />
+        <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="isRecording" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/action_trimAudioFragment_to_importAudioFragment" app:destination="@id/importAudioFragment" />
+    </fragment>
+</navigation>

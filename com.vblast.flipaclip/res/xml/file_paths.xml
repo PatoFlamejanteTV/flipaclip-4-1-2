@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="Backups" path="flipaclip/backups" />
+    <external-path name="External" path="." />
+    <external-path name="Movies" path="flipaclip/movies" />
+    <external-path name="Share" path="flipaclip/share" />
+    <external-files-path name="Temp" path="temp" />
+    <cache-path name="cache" path="." />
+</paths>

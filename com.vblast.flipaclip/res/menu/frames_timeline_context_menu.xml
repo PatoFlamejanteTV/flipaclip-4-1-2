@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_paste_before" android:id="@id/action_paste_left" android:visible="true" android:title="Paste left" android:tooltipText="@string/menu_tooltip_paste_before_frame" />
+    <item android:icon="@drawable/ic_add_before" android:id="@id/action_new_frame_left" android:visible="true" android:title="New frame left" android:tooltipText="@string/menu_tooltip_add_frame_before" />
+    <item android:icon="@drawable/ic_delete" android:id="@id/action_remove_frame" android:visible="true" android:title="Remove frame" android:tooltipText="@string/menu_tooltip_remove_frame" />
+    <item android:icon="@drawable/ic_copy" android:id="@id/action_copy" android:visible="true" android:title="Copy" android:tooltipText="@string/menu_tooltip_copy_frame" />
+    <item android:icon="@drawable/ic_add_after" android:id="@id/action_new_frame_right" android:visible="true" android:title="New frame right" android:tooltipText="@string/menu_tooltip_add_frame_after" />
+    <item android:icon="@drawable/ic_paste_after" android:id="@id/action_paste_right" android:visible="true" android:title="Paste right" android:tooltipText="@string/menu_tooltip_paste_after_frame" />
+</menu>

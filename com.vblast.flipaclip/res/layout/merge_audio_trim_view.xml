@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/audio_trim_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+    <ImageView android:id="@id/waveform" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="64.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="64.0dip" />
+    <com.vblast.feature_stage.presentation.view.audiotracks.AudioRulerView android:id="@id/ruler" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" />
+    <View android:layout_gravity="left" android:id="@id/leftOverlay" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="64.0dip" android:layout_marginBottom="64.0dip" android:alpha="0.7" />
+    <View android:layout_gravity="right" android:id="@id/rightOverlay" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="64.0dip" android:layout_marginBottom="64.0dip" android:alpha="0.7" />
+    <ImageView android:id="@id/leftHandle" android:background="@drawable/audio_trim_left_handle" android:layout_width="16.0dip" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_horizontal_drag" app:tint="?fcColorAccentIconTint" />
+    <ImageView android:id="@id/rightHandle" android:background="@drawable/audio_trim_right_handle" android:layout_width="16.0dip" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_horizontal_drag" app:tint="?fcColorAccentIconTint" />
+    <FrameLayout android:id="@id/scrubber" android:clipChildren="false" android:layout_width="34.0dip" android:layout_height="fill_parent">
+        <View android:layout_gravity="center_horizontal" android:background="?fcColorAccent" android:layout_width="1.0dip" android:layout_height="fill_parent" android:elevation="2.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/ic_audio_trim_scrubber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:elevation="2.0dip" />
+    </FrameLayout>
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <objectAnimator android:duration="200" android:valueTo="@dimen/card_elevation_pressed" android:valueType="floatType" android:propertyName="elevation" />
+    </item>
+    <item android:state_enabled="false">
+        <objectAnimator android:duration="200" android:valueTo="@dimen/card_elevation_disabled" android:valueType="floatType" android:propertyName="elevation" />
+    </item>
+    <item>
+        <objectAnimator android:duration="200" android:valueTo="@dimen/card_elevation_normal" android:valueType="floatType" android:propertyName="elevation" />
+    </item>
+</selector>

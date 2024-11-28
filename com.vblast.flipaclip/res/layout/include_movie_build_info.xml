@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/build_movie_info_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Fc.Section.Small" android:gravity="center" android:id="@id/fps" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="12 FPS" android:layout_weight="1.0" android:textAllCaps="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Fc.Section.Small" android:gravity="center" android:id="@id/duration" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="10 SECONDS" android:layout_weight="1.0" android:textAllCaps="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Fc.Section.Small" android:gravity="center" android:id="@id/totalFrames" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="120 Frames" android:layout_weight="1.0" android:textAllCaps="true" />
+</LinearLayout>

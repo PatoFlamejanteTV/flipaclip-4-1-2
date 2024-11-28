@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/share_graph" app:startDestination="@id/optionsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="optionsFragment" android:name="com.vblast.feature_share.presentation.ShareMediaOptionsFragment" android:id="@id/optionsFragment">
+        <argument android:name="mediaTitle" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="mediaUri" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="mime" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_optionsFragment_to_formFragment" app:destination="@id/formFragment" />
+        <action android:id="@id/action_optionsFragment_to_completeFragment" app:destination="@id/completeFragment" />
+    </fragment>
+    <fragment android:label="UploadFragment" android:name="com.vblast.feature_share.presentation.ShareMediaUploadFragment" android:id="@id/uploadFragment">
+        <action android:id="@id/action_uploadFragment_to_completeFragment" app:destination="@id/completeFragment" app:popUpTo="@id/completeFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="FormFragment" android:name="com.vblast.feature_share.presentation.ShareMediaFormFragment" android:id="@id/formFragment">
+        <action android:id="@id/action_formFragment_to_uploadFragment" app:destination="@id/uploadFragment" />
+        <action android:id="@id/action_formFragment_to_privacyFragment" app:destination="@id/privacyFragment" />
+    </fragment>
+    <fragment android:label="PrivacyFragment" android:name="com.vblast.feature_share.presentation.ShareMediaPrivacyFragment" android:id="@id/privacyFragment" />
+    <fragment android:label="CompleteFragment" android:name="com.vblast.feature_share.presentation.ShareMediaCompleteFragment" android:id="@id/completeFragment" />
+</navigation>

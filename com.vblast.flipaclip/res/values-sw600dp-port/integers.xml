@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="bg_picker_columns">4</integer>
+    <integer name="frames_viewer_columns">2</integer>
+    <integer name="home_item_columns">4</integer>
+</resources>

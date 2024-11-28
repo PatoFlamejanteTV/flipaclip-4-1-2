@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:layout_alignParentTop="true" app:fcRightOptionType="acceptType" app:fcTitle="@string/toolbar_title_image_import" style="@style/Widget.Fc.SimpleToolbar" />
+    <com.vblast.feature_projects.presentation.imageeditor.view.ImageEditorView android:id="@id/imageEditor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/stage_tool_helper_menu_background" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:elevation="8.0dip">
+        <ImageButton android:id="@id/actionFlipH" android:background="?android:selectableItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_flip_h" app:tint="?fcColorIconTint" />
+        <ImageButton android:id="@id/actionFlipV" android:background="?android:selectableItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_flip_v" app:tint="?fcColorIconTint" />
+        <ImageButton android:id="@id/actionRotateCCW" android:background="?android:selectableItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_undo" app:tint="?fcColorIconTint" />
+        <ImageButton android:id="@id/actionRotateCW" android:background="?android:selectableItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_redo" app:tint="?fcColorIconTint" />
+        <ImageButton android:id="@id/actionScaleToFit" android:background="?android:selectableItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_scale_to_fit" app:tint="?fcColorIconTint" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:minWidth="@dimen/purchase_button_min_width" android:minHeight="@dimen/purchase_button_min_height" />
+    <TextView android:textSize="@dimen/type_size_button" android:gravity="center" android:layout_gravity="center" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/purchase_button_min_width" android:minHeight="@dimen/purchase_button_min_height" android:includeFontPadding="false" android:fontFamily="@font/poppins_bold_font" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:id="@id/progressView" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" app:indicatorColor="?fcColorAccent" app:indicatorInset="0.0dip" app:indicatorSize="32.0dip" app:trackColor="?fcColorBorder" app:trackThickness="3.0dip" />
+</merge>

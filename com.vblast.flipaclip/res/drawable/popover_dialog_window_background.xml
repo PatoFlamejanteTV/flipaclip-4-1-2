@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/popover_dialog_edge_inset" android:insetRight="@dimen/popover_dialog_edge_inset" android:insetTop="@dimen/popover_dialog_edge_inset" android:insetBottom="@dimen/popover_dialog_edge_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="16.0dip" />
+        <solid android:color="?fcColorBackground" />
+    </shape>
+</inset>

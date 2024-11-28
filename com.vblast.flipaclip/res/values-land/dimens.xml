@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <dimen name="audio_editor_mid_toolbar_height">40.0dip</dimen>
+    <dimen name="audio_editor_top_toolbar_height">40.0dip</dimen>
+    <dimen name="audio_timeline_height">16.0dip</dimen>
+    <item type="dimen" name="bannerContentWeight">3</item>
+    <item type="dimen" name="bannerWeightSum">5</item>
+    <dimen name="color_wheel_picker_max_width">287.0dip</dimen>
+    <item type="dimen" name="dialogWidthPct">0.85</item>
+    <dimen name="material_time_picker_minimum_screen_height">450.0dip</dimen>
+    <dimen name="material_time_picker_minimum_screen_width">600.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_bottom">24.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_top">24.0dip</dimen>
+    <dimen name="mtrl_calendar_days_of_week_height">20.0dip</dimen>
+    <dimen name="mtrl_calendar_header_content_padding">4.0dip</dimen>
+    <dimen name="mtrl_calendar_header_height_fullscreen">96.0dip</dimen>
+    <dimen name="mtrl_calendar_header_toggle_margin_bottom">0.0dip</dimen>
+    <dimen name="mtrl_calendar_header_toggle_margin_top">0.0dip</dimen>
+    <dimen name="mtrl_calendar_landscape_header_width">104.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_baseline_to_top_fullscreen">68.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_bottom_fullscreen">28.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_top">64.0dip</dimen>
+    <dimen name="mtrl_calendar_text_input_padding_top">32.0dip</dimen>
+    <dimen name="mtrl_calendar_title_baseline_to_top">24.0dip</dimen>
+    <dimen name="mtrl_calendar_title_baseline_to_top_fullscreen">32.0dip</dimen>
+    <dimen name="rewarded_paywall_logo_max_size">76.0dip</dimen>
+    <dimen name="stage_audio_button_margin_bottom">16.0dip</dimen>
+    <dimen name="stage_audio_button_margin_start">22.0dip</dimen>
+    <dimen name="stage_layers_button_margin_bottom">16.0dip</dimen>
+    <dimen name="stage_layers_button_margin_end">4.0dip</dimen>
+    <dimen name="stage_tools_menu_height">320.0dip</dimen>
+    <dimen name="stage_tools_menu_margin_bottom">16.0dip</dimen>
+    <dimen name="stage_tools_menu_margin_end">0.0dip</dimen>
+    <dimen name="stage_tools_menu_margin_top">16.0dip</dimen>
+    <dimen name="stage_tools_menu_width">60.0dip</dimen>
+    <dimen name="stage_top_toolbar_height">40.0dip</dimen>
+    <dimen name="stage_top_toolbar_margin_end">0.0dip</dimen>
+    <dimen name="stage_top_toolbar_margin_start">16.0dip</dimen>
+    <dimen name="toolbar_height">40.0dip</dimen>
+    <dimen name="top_navigation_bar_height">40.0dip</dimen>
+    <dimen name="txt_size_inapp_footer_button">16.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_message">14.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_title">18.0sp</dimen>
+    <dimen name="txt_size_inapp_half_message">18.0sp</dimen>
+    <dimen name="txt_size_inapp_half_title">24.0sp</dimen>
+    <dimen name="txt_size_inapp_title">24.0sp</dimen>
+</resources>

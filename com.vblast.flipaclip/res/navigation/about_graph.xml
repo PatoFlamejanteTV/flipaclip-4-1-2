@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/about_graph" app:startDestination="@id/aboutFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AboutFragment" android:name="com.vblast.feature_about.AboutFragment" android:id="@id/aboutFragment">
+        <action android:id="@id/action_aboutFragment_to_openSourceFragment" app:destination="@id/openSourceFragment" />
+    </fragment>
+    <fragment android:label="OpenSourceFragment" android:name="com.vblast.feature_about.OpenSourceFragment" android:id="@id/openSourceFragment" />
+</navigation>

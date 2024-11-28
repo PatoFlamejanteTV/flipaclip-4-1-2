@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="start">
+        <shape>
+            <size android:width="@dimen/timeline_fast_scroll_track_fading_edge_size" />
+            <gradient android:startColor="#00ffffff" android:endColor="#ffffffff" android:angle="0.0" />
+        </shape>
+    </item>
+    <item android:gravity="end">
+        <shape>
+            <size android:width="@dimen/timeline_fast_scroll_track_fading_edge_size" />
+            <gradient android:startColor="#ffffffff" android:endColor="#00ffffff" android:angle="0.0" />
+        </shape>
+    </item>
+    <item android:left="@dimen/timeline_fast_scroll_track_fading_edge_size" android:right="@dimen/timeline_fast_scroll_track_fading_edge_size">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+</layer-list>

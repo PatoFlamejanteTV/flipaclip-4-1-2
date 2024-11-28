@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="windowIsTranslucent_portrait_BUG68454482">true</bool>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction android:title="@string/institution_id" android:key="institutionId" android:restrictionType="string" />
+    <restriction android:title="@string/license_id" android:key="license" android:restrictionType="string" />
+    <restriction android:title="@string/policy_type" android:key="policyType" android:restrictionType="string" />
+</restrictions>

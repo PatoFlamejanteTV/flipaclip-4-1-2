@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/Theme.Fc.FormSheet.ContestHome" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutDescription="@xml/motion_contest_home"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.motion.widget.MotionLayout android:id="@id/motionLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutDescription="@xml/motion_contest_home">
+        <FrameLayout android:id="@id/contestInfo" android:layout_width="fill_parent" android:layout_height="256.0dip" android:alpha="1.0" app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="256.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="224.0dip" app:layout_constraintTop_toBottomOf="@id/toolbar" layout="@layout/include_contest_info" />
+                <TextView android:textSize="12.0dip" android:textStyle="bold|italic" android:textColor="?fcColorAccent" android:gravity="center" android:id="@id/contestStatus" android:layout_width="fill_parent" android:layout_height="32.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="?fcColorBackground" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/contest_tab_side_padding" android:layout_marginRight="@dimen/contest_tab_side_padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/contestInfo" style="@style/Widget.Fc.TabLayout.Contest">
+            <com.google.android.material.tabs.TabItem android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.google.android.material.tabs.TabItem android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.google.android.material.tabs.TabLayout>
+        <View android:id="@id/staticBorder" android:background="?fcColorDivider" android:layout_width="1.0dip" android:layout_height="20.0dip" app:layout_constraintBottom_toBottomOf="@id/tabLayout" app:layout_constraintEnd_toEndOf="@id/tabLayout" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="@id/tabLayout" app:layout_constraintTop_toTopOf="@id/tabLayout" app:layout_constraintVertical_bias="0.5" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+        <ImageView android:id="@id/staticTabShadow" android:background="@null" android:layout_width="fill_parent" android:layout_height="16.0dip" app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+        <com.vblast.core.view.ContentLoadingOverlayView android:id="@id/contentLoadingOverlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.vblast.core.view.SimpleToolbar android:id="@id/toolbar" android:background="?fcColorBackground" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:id="@id/winnerPriceHolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageButton android:id="@id/winnerPriceButton" android:background="@null" android:visibility="invisible" android:layout_width="48.0dip" android:layout_height="62.0dip" android:scaleType="fitStart" />
+        </FrameLayout>
+        <com.vblast.feature_accounts.contest.widget.ContestNotificationView android:id="@id/notificationView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

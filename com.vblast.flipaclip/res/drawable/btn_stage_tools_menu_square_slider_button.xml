@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/slider_button_border_width" android:color="?fcColorAccent" />
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="@dimen/slider_button_square_outer_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/slider_button_inner_padding" android:top="@dimen/slider_button_inner_padding" android:right="@dimen/slider_button_inner_padding" android:bottom="@dimen/slider_button_inner_padding" />
+            <stroke android:width="@dimen/slider_button_border_width" android:color="?fcColorBorder" />
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="@dimen/slider_button_square_outer_radius" />
+        </shape>
+    </item>
+</selector>

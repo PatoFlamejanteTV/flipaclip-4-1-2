@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vblast.feature_discover.presentation.section.view.DiscoverSectionContentShimmer android:id="@id/shimmerView" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_max="@dimen/discover_section_content_maxWidth" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_max="@dimen/discover_section_content_maxWidth">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/contentList" android:paddingLeft="@dimen/discover_section_content_paddingHorizontal" android:paddingTop="@dimen/discover_section_content_paddingVertical" android:paddingRight="@dimen/discover_section_content_paddingHorizontal" android:paddingBottom="@dimen/discover_section_content_paddingVertical" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="@dimen/discover_section_content_paddingHorizontal" android:paddingVertical="@dimen/discover_section_content_paddingVertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/include_error_message" />
+</androidx.constraintlayout.widget.ConstraintLayout>

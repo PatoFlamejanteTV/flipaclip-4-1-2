@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="color_preset_size">40.0dip</dimen>
+    <dimen name="home_bottom_nav_button_margin">16.0dip</dimen>
+    <dimen name="home_drawer_header_button_size">96.0dip</dimen>
+    <dimen name="home_drawer_header_button_spacing">16.0dip</dimen>
+    <dimen name="rewarded_paywall_button_height">64.0dip</dimen>
+    <dimen name="rewarded_paywall_buttons_spacing">16.0dip</dimen>
+    <dimen name="rewarded_paywall_margin_bottom">50.0dip</dimen>
+    <dimen name="rewarded_paywall_subtitle_text_size">16.0dip</dimen>
+    <dimen name="rewarded_paywall_title_text_size">50.0dip</dimen>
+    <dimen name="screen_vertical_padding">32.0dip</dimen>
+    <dimen name="stage_toolbar_item_width">48.0dip</dimen>
+    <dimen name="step_progress_margin_bottom">16.0dip</dimen>
+    <dimen name="step_progress_margin_top">16.0dip</dimen>
+    <dimen name="toolbar_item_width">48.0dip</dimen>
+</resources>

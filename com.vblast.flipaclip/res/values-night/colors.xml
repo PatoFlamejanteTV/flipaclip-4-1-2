@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ply_subscriptions_container">#ff222222</color>
+    <color name="ply_subscriptions_primary">#fff2f1f6</color>
+    <color name="ply_subscriptions_secondary">#ffb2b1b6</color>
+    <color name="ply_subscriptions_surface">#ff3f3f3f</color>
+</resources>
